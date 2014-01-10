@@ -1,0 +1,88 @@
+#!/bin/sh
+gimp -n -i -b - <<EOF
+(let* ( (file's (cadr (file-glob "*.xcf" 1))) (filename "") (image 0) (layer 0) )
+  (while (pair? file's) 
+    (set! image (car (gimp-file-load RUN-NONINTERACTIVE (car file's) (car file's))))
+    (set! layer (car (gimp-image-merge-visible-layers image CLIP-TO-IMAGE)))
+    (set! filename (string-append (substring (car file's) 0 (- (string-length (car file's)) 4)) ".png"))
+    (gimp-file-save RUN-NONINTERACTIVE image layer filename filename)
+    (gimp-image-delete image)
+    (set! file's (cdr file's))
+    )
+  (gimp-quit 0)
+  )
+EOF
+#for i in btn_*.png; do
+#	convert $i -resize 48x48 ../drawable-ldpi/$i
+#	convert $i -scale 64x64 ../drawable-mdpi/$i
+#	convert $i -resize 86x86 ../drawable-hdpi/$i
+#done
+
+for i in ic_menu*.png; do
+	convert $i -resize 36x36\! ../drawable-ldpi/$i
+	convert $i -resize 48x48\! ../drawable-mdpi/$i
+	convert $i -resize 72x72\! ../drawable-hdpi/$i
+	convert $i -resize 96x96\! ../drawable-xhdpi/$i
+done
+
+for i in ic_home.png; do
+	convert $i -resize 36x36\! ../drawable-ldpi/$i
+	convert $i -resize 48x48\! ../drawable-mdpi/$i
+	convert $i -resize 72x72\! ../drawable-hdpi/$i
+	convert $i -resize 96x96\! ../drawable-xhdpi/$i
+done
+
+for i in ic_pref*.png; do
+	convert $i -resize 36x36\! ../drawable-ldpi/$i
+	convert $i -resize 48x48\! ../drawable-mdpi/$i
+	convert $i -resize 72x72\! ../drawable-hdpi/$i
+	convert $i -resize 96x96\! ../drawable-xhdpi/$i
+done
+
+for i in ic_dash*.png; do
+	convert $i -resize 48x48\! ../drawable-ldpi/$i
+	convert $i -resize 64x64\! ../drawable-mdpi/$i
+	convert $i -resize 96x96\! ../drawable-hdpi/$i
+	convert $i -resize 120x120\! ../drawable-xhdpi/$i
+done
+
+for i in ic_training*.png; do
+	convert $i -resize 36x36\! ../drawable-ldpi/$i
+	convert $i -resize 48x48\! ../drawable-mdpi/$i
+	convert $i -resize 72x72\! ../drawable-hdpi/$i
+	convert $i -resize 96x96\! ../drawable-xhdpi/$i
+done
+
+for i in ic_sync_tab*.png; do
+	convert $i -resize 24x24\! ../drawable-ldpi/$i
+	convert $i -resize 32x32\! ../drawable-mdpi/$i
+	convert $i -resize 48x48\! ../drawable-hdpi/$i
+	convert $i -resize 80x80\! ../drawable-xhdpi/$i
+done
+
+for i in ic_flags*.png; do
+	convert $i -resize 32x16 ../drawable-ldpi/$i
+	convert $i -resize 64x32 ../drawable-mdpi/$i
+	convert $i -resize 80x64 ../drawable-hdpi/$i
+	convert $i -resize 120x80 ../drawable-xhdpi/$i
+done
+
+for i in sync_*.png; do
+	convert $i -resize 36x36\! ../drawable-ldpi/$i
+	convert $i -resize 48x48\! ../drawable-mdpi/$i
+	convert $i -resize 72x72\! ../drawable-hdpi/$i
+	convert $i -resize 96x96\! ../drawable-xhdpi/$i
+done
+
+for i in ic_slidelock_thumb.png; do
+	convert $i -resize 36x36\! ../drawable-ldpi/$i
+done
+
+for i in anim_tatoeba_bubbles_*; do
+	convert $i -resize 12x12\! ../drawable-mdpi/$i
+	convert $i -resize 24x24\! ../drawable-hdpi/$i
+	convert $i -resize 36x36\! ../drawable-xhdpi/$i
+done
+
+	
+

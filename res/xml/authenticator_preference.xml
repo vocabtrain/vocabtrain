@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+       <PreferenceScreen
+      xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <PreferenceScreen
+            android:title="@string/sync_pref_account"
+            android:summary="@string/sync_pref_account_desc">
+            <intent
+                android:action="org.devwork.vocabtrain.ACCOUNT_SETUP"
+                android:targetPackage="org.devwork.vocabtrain"
+                android:targetClass="org.devwork.vocabtrain.sync.AuthenticatorPreferenceActivity" />
+        </PreferenceScreen>
+        
+        
+    </PreferenceScreen>
+   

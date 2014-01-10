@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+                  
+        <item android:id="@+id/menu_filinglist_chart"
+          android:icon="@android:drawable/ic_menu_gallery"
+          android:showAsAction="ifRoom|withText" 
+          android:orderInCategory="4"
+          android:title         ="@string/menu_chart"
+          android:titleCondensed="@string/menu_chart_short"
+          /> 
+</menu> 
+

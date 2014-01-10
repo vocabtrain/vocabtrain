@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:padding="10dp"
+              >
+    <LinearLayout
+              android:orientation="horizontal"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              >
+    <!-- 
+    <ImageView android:id="@+id/tourtip_image"
+               android:layout_width="wrap_content"
+               android:layout_height="fill_parent"
+               android:layout_marginRight="10dp"
+               />
+                -->
+    <TextView android:id="@+id/tourtip_text"
+              android:layout_width="wrap_content"
+              android:layout_height="fill_parent"
+              />
+    
+  </LinearLayout>
+  
+            <LinearLayout
+              android:orientation="horizontal"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="5sp"
+               android:padding="10dp"
+              >
+
+    
+        <Button android:id="@+id/tourtip_prev"
+        android:text="@string/button_prev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        />
+        
+            <Button android:id="@+id/tourtip_next"
+        android:text="@string/button_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        />
+        <Button android:id="@+id/tourtip_ok"
+        android:text="@android:string/ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        />
+    
+  </LinearLayout>
+        
+        
+        
+        
+</LinearLayout>

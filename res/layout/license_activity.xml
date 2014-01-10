@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"> 
+    
+    <TextView android:id="@+id/license_text"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content" />
+	
+<CheckBox android:id="@+id/license_check"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:text="@string/layout_license_accept"
+	/>
+
+
+
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"> 
+
+
+<Button android:id="@+id/license_ok"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_weight="1"
+android:text="@string/layout_button_accept"
+/>
+
+<Button android:id="@+id/license_decline"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_weight="1"
+android:text="@string/layout_button_decline"
+/>
+
+
+
+
+<Button android:id="@+id/license_view"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_weight="1"
+android:text="@string/layout_license_view"
+android:visibility="gone"
+/>
+
+</LinearLayout>
+
+    
+    
+</LinearLayout>
+</ScrollView>

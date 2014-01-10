@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    
+
+<include layout="@layout/training_titlebar" />
+
+<include layout="@layout/training_buttonbar" />
+          
+    
+          
+<include android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:layout_centerInParent="true"
+    android:layout_below="@id/training_titlebar_layout"
+    android:layout_above="@id/textcard_editlayout"
+    layout="@layout/training_fragment" />
+	
+            
+	    
+	    <!--   android:layout_below="@id/textcard_traininglayout"-->
+	           
+
+	<LinearLayout android:id="@id/textcard_editlayout"
+	    android:layout_above="@id/training_buttonbar_layout"
+		android:orientation="vertical"
+        android:layout_height="wrap_content" 
+        android:layout_width="fill_parent"
+		>
+	    <TextView android:id="@+id/textcard_firstanswer"
+        android:layout_width="fill_parent"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_height="wrap_content"
+         />
+	    <TextView android:id="@+id/textcard_hiragana"
+        android:layout_width="fill_parent"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_height="wrap_content"
+         />
+        <TextView android:id="@+id/textcard_katakana" 
+        android:layout_width="fill_parent"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_height="wrap_content"
+         />
+		<EditText 
+		android:maxLines="1"
+        android:id="@+id/textcard_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:inputType="textEmailAddress"
+		android:singleLine="true"
+        />
+   </LinearLayout>
+
+       
+       
+	<!-- 
+	<include android:layout_above="@id/textcard_editlayout"
+	android:layout_width="fill_parent"
+    android:layout_height="wrap_content" layout="@layout/training_fragment" />
+	 -->
+	
+</RelativeLayout>

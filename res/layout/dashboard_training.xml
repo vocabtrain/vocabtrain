@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+     <com.example.android.DashboardLayout
+         xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:id="@+id/dashboard_sub_training"
+            android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+         >
+         
+                   
+         <Button android:id="@+id/dashboard_ontable"
+                     style="@style/DashboardButton"
+        android:drawableTop="@drawable/btn_dash_training_tableview"
+    	android:text="@string/training_type_tableview"
+    	/>
+
+    	<Button android:id="@+id/dashboard_onflashcard"
+    	                         style="@style/DashboardButton"
+        android:drawableTop="@drawable/btn_dash_training_flashcard"
+    	android:text="@string/training_type_flashcard" 
+    	/>
+        <Button android:id="@+id/dashboard_onshowcard"
+                	                         style="@style/DashboardButton"
+        android:drawableTop="@drawable/btn_dash_training_showcard"
+    	android:text="@string/training_type_showcard"
+    	/>
+
+    	<Button android:id="@+id/dashboard_ontextcard"
+    	                         style="@style/DashboardButton"
+        android:drawableTop="@drawable/btn_dash_training_textcard"
+    	android:text="@string/training_type_textcard"
+    	/>
+         
+         </com.example.android.DashboardLayout>
+
+
+

@@ -1,0 +1,7 @@
+    <account-authenticator xmlns:android="http://schemas.android.com/apk/res/android"
+        android:accountType="org.devwork.vocabtrain.account"
+        android:icon="@drawable/ic_home"
+        android:smallIcon="@drawable/ic_home"
+        android:label="@string/app_name"
+        android:accountPreferences="@xml/authenticator_preference"
+        />

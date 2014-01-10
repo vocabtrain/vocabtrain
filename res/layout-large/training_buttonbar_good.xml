@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    
+  
+            <Button
+                android:id="@+id/training_button_trivial"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_training_trivial"
+                android:text="@string/layout_training_trivial" />
+
+            <Button
+                android:id="@+id/training_button_easy"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_training_easy"
+                android:text="@string/layout_training_easy" />
+
+            <Button
+                android:id="@+id/training_button_good"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_training_good"
+                android:text="@string/layout_training_good" />
+</merge>

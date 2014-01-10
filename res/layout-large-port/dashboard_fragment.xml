@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    
+    <include layout="@layout/dashboard_header"  />
+        <include layout="@layout/dashboard_footer" />
+    
+  	<LinearLayout 
+  	        android:layout_above="@id/dashboard_misc_layout"
+  	        android:layout_below="@id/dashboard_header_layout"
+    		android:orientation="vertical"
+    		                        android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		 android:layout_centerInParent="true"
+  	    >
+        
+        <include layout="@layout/dashboard_selection" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1"/>
+            <include layout="@layout/dashboard_training" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    <include layout="@layout/dashboard_database" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1"/>
+            
+                     
+    	
+    	</LinearLayout>
+</RelativeLayout>
+
+

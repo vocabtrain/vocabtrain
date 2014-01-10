@@ -1,0 +1,795 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="layout_dash_bluetooth">Bluetooth</string>
+<string name="no_bluetooth_title">Kein Bluetooth</string>
+<string name="no_bluetooth">Ihr Gerät ist leider nicht Bluetooth-fähig.</string>
+
+<string name="select_bluetooth_role">Soll das Gerät als Empfänger oder Sender fungieren? Achtung: Die Datenbank des Empfängers wird bei der Übertragung überschrieben!</string>
+<string name="select_bluetooth_role_title">Welche Rolle?</string>
+<string name="button_sender">Sender</string>
+<string name="button_receiver">Empfänger</string>
+
+<string name="pref_basic_mode">Vereinfachter Modus</string>
+<string name="pref_basic_mode_on">Es werden nur grundlegende Optionen im Dashboard angeboten.</string>
+<string name="pref_basic_mode_off">Alle verfügbaren Funktionen sind anwählbar und stehen zur Verfügung.</string>
+
+
+<string name="menu_training_skip_short">Auslassen</string>
+<string name="menu_training_skip">Karte überspringen</string>
+
+<string name="bluetooth_receiver_title">Warten auf Sender&#8230;</string>
+<string name="bluetooth_receiver_desc">Das Gerät wartet auf ein anderes Gerät, das als Sender Kontakt aufnimmt.</string>
+<string name="bluetooth_receiver_receiving">Datenbankdaten werden von Sendegerät empfangen und gespeichert&#8230;</string>
+<string name="bluetooth_sender_sending">Sende Datenbankdaten an den Empfänger&#8230;</string>
+<string name="bluetooth_sender_title">Sende Daten&#8230;</string>
+<string name="bluetooth_sender_desc">Verbindung mit dem Server wird aufgebaut&#8230;</string>
+<string name="bluetooth_select_servers">Verbinde mit</string>
+
+<string name="pref_eyecandy">Augenschmauß</string>
+<string name="pref_skin">Skin</string>
+<string name="pref_skin_title">Wähle Skin</string>
+<string name="pref_skin_on">App wird mit eigenen Hintergrundbildern überzogen.</string>
+<string name="pref_skin_off">Das Aussehen der App wird nicht beeinflusst.</string>
+<string name="pref_skin_directory">Skin-Verzeichnis</string>
+<string name="pref_skin_directory_summary">Das Verzeichnis, aus dem die Bilder zu laden sind.</string>
+<string name="button_load_directory">Wähle Verzeichnis</string>
+        <string name="button_donate">Spende</string>
+
+    <string name="layout_comma_separator">, </string>
+        <string name="layout_space_separator"> </string>
+                <string name="layout_coordinate_x">x: </string>
+                        <string name="layout_coordinate_y">y: </string>
+                    <string name="desc_preference_icon">Icon of the preference</string>
+          
+          <string name="desc_fractal">Fractal Image</string>
+                          <string name="desc_sync_book_child_check">Multistate Checkbox</string>
+                    <string name="desc_sync_book_child_image_language">Language of the book</string>
+                  <string name="desc_training_titlebar_image">Target Language of current card</string>
+          
+    <string name="type_unknown">unbestimmt</string>
+    <string name="language_unknown">unbekannte Sprache</string>
+<string name="type_special_transitive">transitiv</string>
+<string name="type_special_intransitive">intransitiv</string>
+<string name="type_special_reflexive">reflexiv</string>
+<string name="type_special_godan_doushi">Godan</string>
+<string name="type_special_ichidan_doushi">Ichidan</string>
+<string name="type_special_irregular_doushi">irregulär</string> 
+<string name="type_special_adjective_na">ナ</string>
+<string name="type_special_adjective_i">イ</string>
+ <string name="type_special_comparative">Komparativ</string> 
+ <string name="type_special_superlative">Superlativ</string>
+<string name="type_verb">Verb</string>
+<string name="type_verb_transitive">transitives Verb</string>
+<string name="type_verb_intransitive">intransitives Verb</string>
+<string name="type_verb_reflexive">reflexives Verb</string>
+<string name="type_verb_godan_doushi">Godan-Verb</string>
+<string name="type_verb_ichidan_doushi">Ichidan-Verb</string>
+<string name="type_verb_irregular_doushi">irreguläres Verb</string>
+<string name="type_verb_transitive_godan_doushi">transitives Godan-Verb</string>
+<string name="type_verb_transitive_ichidan_doushi">transitives Ichidan-Verb</string>
+<string name="type_verb_transitive_irregular_doushi">transitives irreguläres Verb </string>
+<string name="type_verb_intransitive_godan_doushi">intransitives Godan-Verb</string>
+<string name="type_verb_intransitive_ichidan_doushi">intransitives Ichidan-Verb</string>
+<string name="type_verb_intransitive_irregular_doushi">intransitives irreguläres Verb</string>
+<string name="type_verb_reflexive_godan_doushi">reflexives Godan-Verb</string>
+<string name="type_verb_reflexive_ichidan_doushi">reflexives Ichidan-Verb</string>
+<string name="type_verb_reflexive_irregular_doushi">reflexives irreguläres Verb</string>
+<string name="type_adjective">Adjektiv</string>
+<string name="type_adjective_comparative">Komparatives Adjektiv</string>
+<string name="type_adjective_superlative">Superlatives Adjektiv</string>
+<string name="type_adjective_na">ナ-Adjektiv</string>
+<string name="type_adjective_i">イ-Adjektiv</string>
+<string name="type_adverb">Adverb</string>
+<string name="type_adverb_comparative">Komparatives Adverb</string>
+<string name="type_adverb_superlative">Superlatives Adverb</string>
+<string name="type_adposition">Adposition</string>
+<string name="type_adposition_preposition">Präposition</string>
+<string name="type_adposition_postposition">Postposition</string>
+<string name="type_adposition_particle">Partikel</string>
+<string name="type_conjugation">Konjugation</string>
+<string name="type_abbreviation">Abkürzung</string>
+<string name="type_saw">Sprichwort</string>
+<string name="type_noun">Nomen</string>
+<string name="type_noun_feminine">Femininum</string>
+<string name="type_noun_maskuline">Maskulinum</string>
+<string name="type_noun_neuter">Neutrum</string>
+<string name="type_noun_feminine_plural">Femininum Plural</string>
+<string name="type_noun_maskuline_plural">Maskulinum Plural</string>
+<string name="type_noun_neuter_plural">Neutrum Plural</string>
+   
+    <string name="database_synced_error">Die Übersetzungsdaten fehlen - wahrscheinlich ist bei der Synchronisation ein Fehler aufgetreten. Bitte machen Sie ein Backup Ihrer Kartei, löschen alle Bücher und installieren diese erneut.</string>
+    <string name="database_error_title">Datenbank-Fehler</string>
+    <string name="database_error">Beim Ändern der Datenbank ist der Fehler &#8216;%s&#8217; aufgetreten.</string>
+            <string name="bluetooth_error">Bei der Bluetooth-Übertragung ist der Fehler &#8216;%s&#8217; aufgetreten.</string>
+    
+        <string name="button_retry">Erneut versuchen</string>
+        
+    <string name="layout_dash_sync">Sync</string>
+            
+<string name="tatoeba">Beispielsätze</string>
+<string name="pref_tatoeba">Aktiviere Satzsuche</string>
+<string name="pref_tatoeba_on">Beispielsätze können im Training gesucht werden.</string>
+<string name="pref_tatoeba_off">Der Knopf zum Suchen von Beispielsätzen fehlt im Training.</string>
+<string name="pref_tatoeba_length">Anzahl der Sätze</string>
+<string name="pref_tatoeba_length_summary">Wieviele Beispielsätze sollen gesucht werden?</string>
+<string name="pref_tatoeba_show_translations">Übersetzungen anzeigen</string>
+<string name="pref_tatoeba_show_translations_on">Zeige automatisch alle Übersetzungen der Beispielsätze an.</string>
+<string name="pref_tatoeba_show_translations_off">Erst beim Öffnen eines Beispielsatzes wird nach dessen Übersetzung gesucht.</string>
+<string name="pref_tatoeba_translations_vernicular">In Muttersprache</string>
+<string name="pref_tatoeba_translations_vernicular_on">Zeige Übersetzungen der Beispiele in allen installierten Muttersprachen an.</string>
+<string name="pref_tatoeba_translations_vernicular_off">Es wird keine in den Muttersprachen gegebenen Übersetzungen angezeigt.</string>
+<string name="pref_tatoeba_translations_study">In Lernsprachen</string>
+<string name="pref_tatoeba_translations_study_on">Zeige Übersetzungen der Beispiele in allen Sprachen an, die momentan gelernt werden.</string>
+<string name="pref_tatoeba_translations_study_off">Übersetzungen in zu lernernde Sprachen werden ignoriert.</string>
+<string name="pref_tatoeba_translations_all">In allen Sprachen</string>
+<string name="pref_tatoeba_translations_all_on">Zeige Übersetzungen der Beispiele in allen Sprachen an.</string>
+<string name="pref_tatoeba_translations_all_off">Zeige Übersetzungen nur in bestimmten Sprachen an.</string>
+<string name="pref_tatoeba_translations">Beispielsätzeübersetzung</string>
+    
+    <string name="layout_sync_checkout_button_download_filing">Kartei herunterladen</string>
+    <string name="layout_sync_checkout_button_upload_filing">Kartei hochladen</string>
+    <string name="layout_sync_checkout_button_sync_books">Bücher synchronisieren</string>
+    <string name="layout_sync_checkout_books_adding">Hinzufügen der Bücher </string>
+    <string name="layout_sync_checkout_books_deleting">Löschen der Bücher </string>
+    <string name="layout_sync_checkout_books_update">Aktualisieren der Bücher </string>
+    <string name="layout_sync_checkout_language_adding">Hinzufügen der Sprachen </string>
+    <string name="layout_sync_checkout_language_deleting">Löschen der Sprachen </string>
+    
+    <string name="sync_tab_books">Bücher</string>
+    <string name="sync_tab_languages">Sprachen</string>
+    <string name="sync_tab_checkout">Kontrolle</string>
+    <string name="sync_checkout_filing_servernew">Die Kartei auf dem Server ist aktueller.</string>
+    <string name="sync_checkout_filing_localnew">Die lokal gespeicherte Kartei ist neuer als die auf dem Server.</string>
+    <string name="sync_checkout_filing_equalnew">Die Kartei auf dem Server sowohl als auch auf dem Gerät sind gleich aktuell.</string>
+    <string name="sync_checkout_ask_filing_upload_title">Kartei hochladen?</string>
+    <string name="sync_checkout_ask_filing_upload">Wolles Sie wirklich die Kartei hochladen, auch wenn die Kartei auf dem Server aktueller ist?</string>    
+    <string name="sync_checkout_ask_filing_download_title">Kartei herunterladen?</string>
+    <string name="sync_checkout_ask_filing_download">Wolles Sie wirklich die Kartei herunterladen, obwohl diese auf dem Server älter ist?</string>    
+        
+            <string name="language_spanish">Spanisch</string>
+        
+    <string name="language_japanese">Japanisch</string>
+    <string name="language_latin">Latein</string>
+                <string name="menu_chart_short">Graph</string>
+                <string name="menu_chart">Diagramme zeichnen</string>
+                        
+                    
+                    <string name="sync_after_training">Wollen Sie Ihre erzielten Ergebnisse auf den Server spielen?</string>
+                    <string name="sync_after_training_title">Synchronisieren?</string>
+                    
+                    <string name="plot_cards">Karten</string>
+                    <string name="plot_sessions">Sitzungen</string>
+                    <string name="plot_type_nextalgo">Sitzungsverteilung</string>
+                    <string name="plot_type_nextalgo_desc">vorläufige Anzahl der Karten bei den nächsten Sitzungen</string>
+                    
+                    <string name="plot_type_interval_desc">Sitzungsintervall, logarithmisch</string>
+                    
+                                            <string name="plot_type_nextalgo_kumul">Kulumative Verteilung</string>
+                    <string name="plot_type_nextalgo_kumul_desc">kumulative Aufrechnung der Karten per Sitzung</string>
+                        
+                        
+                        
+                    <string name="plot_type_interval">Absolutinterval</string>
+        <string name="menu_search">Suche</string>
+        
+    <string name="pref_update_title">Updates</string>
+       		 <string name="typeface_missing">Die Schriftartdatei &#8216;%s&#8217; konnte nicht gefunden werden.</string>
+       		 <string name="typeface_missing_title">Fehlende Schrift</string>
+    
+     <string name="pref_typeface_use_system_font_title">Verwende Systemschrift</string>
+     <string name="pref_typeface_use_system_font_on">Es wird eine vom System bereitgestellte Schriftart verwendet.</string>
+     <string name="pref_typeface_use_system_font_off">Eine benutzerdefinierte ttf-Schriftdatei wird für diese Sprache verwendet.</string>
+     <string name="pref_typeface_system_font_title">Wähle Systemschrift</string>
+     <string name="pref_typeface_system_font_summary">Monospace, Serif und Sans sind die verfügbaren Standardschriftarten.</string>
+     <string name="pref_typeface_custom_title">Wähle eigene Schrift</string>
+     <string name="pref_typeface_custom_summary">Geben Sie den Dateipfad einer eigene Schriftartdatei an.</string>
+     <string name="pref_typeface_style_title">Ändere Schriftstil</string>
+     <string name="pref_typeface_style_summary">Schriftstile wie Fett und Kursiv sind auswählbar.</string>
+ 
+		    <string name="layout_update_confirm_text">Möchten Sie die aktuellste Version von Vocabtrain manuell installieren?</string>
+    <string name="layout_update_confirm_stop">Benachrichtige mich nicht mehr über Updates.</string>
+         
+		    <string name="update_confirm_title">Update von Vocabtrain bestätigen</string>
+        
+		
+                    <string name="pref_typeface">Schriftart</string>
+                    <string name="pref_typeface_summary">Schrittyp und -stil, eigene Schriftdatei</string>
+         
+   
+                    <string name="sync_freq_1h">Stündlich</string>
+                <string name="sync_freq_6h">6 Stunden</string>
+                <string name="sync_freq_1d">Täglich</string>
+                <string name="sync_freq_3d">3 Tage</string>
+                <string name="sync_freq_1w">Wöchentlich</string>
+    
+                                  <string name="send_text_to">Sende Text an</string>
+                    
+                                                        <string name="font_style_bold">Fett</string>
+                     <string name="font_style_bold_italic">Fett und Kursiv</string>
+                      <string name="font_style_italic">Kursiv</string>
+                       <string name="font_style_normal">Normal</string>
+                   
+                                           <string name="layout_typeface_usage">Geben Sie den Dateinamen der Schriftdatei ein: </string>
+                                                                      <string name="pref_typeface_title">Eigene Schriftart verwenden</string>
+                                               
+                    
+                                   <string name="layout_dash_sequence">Reihenfolge</string>
+                                   <string name="layout_dash_sub_selection">Auswahl</string>
+                                   <string name="layout_dash_sub_training">Training</string>
+                                   <string name="layout_dash_sub_database">Datenbank</string>
+                                             <string name="dash_basic_mainmenu">Hauptmenü</string>
+                                   
+    
+                                       <string name="porter_button_export">Exportieren</string>
+                                       <string name="porter_button_import">Importieren</string>
+                                       
+                                           
+                                           <string name="pref_typeface_file_title">Schriftartdatei wählen</string>
+           <string name="database_file_title">Wähle neuen Datenbankpfad</string>
+		   <string name="porter_file_import_title">Importiere Fortschritt aus Datei &#8230;</string>                                           
+           <string name="porter_file_export_title">Speichere Fortschritt ab in &#8230;</string>
+                                       
+        <string
+        name="ui_activity_authenticating">Authentifiziere\u2026</string>
+    
+        <string
+        name="login_activity_loginfail_text_both">Benutzername oder Passwort sind ungültig. </string>
+        
+                <string
+        name="login_activity_loginfail_text_pwonly">Eingegebenes Passwort ist entweder falsch oder wurde geändert. Bitte nochmals überprüfen! </string>
+            
+                <string
+        name="login_activity_newaccount_text">Bitte melden Sie sich an. </string>
+                    <string
+        name="login_activity_loginfail_text_pwmissing">Geben Sie bitte das Passwort für Ihren Account ein.</string>
+                 	<string name="ask_remove_a_card_from_filing">Wollen Sie wirklich diese Karte aus der Kartei löschen?</string>	
+                        
+	<string name="ask_remove_a_card_from_filing_title">Karteikarte löschen?</string>	
+	<string name="ask_remove_from_filing_title">Karteikarten löschen?</string>	
+                 	    
+	<string name="ask_remove_from_filing">Wollen Sie wirklich die selektierten Einträge aus der Kartei löschen?</string>	
+<string name="pref_use_default_sequence">Eine Kartei für alle Reihenfolgen</string>   
+<string name="pref_use_default_sequence_on">Es wird für jede Reihenfolge die gleiche Kartei verwendet.</string>
+<string name="pref_use_default_sequence_off">Für jede Reihenfolge wird eine eigene Kartei verwaltet.</string>
+<string name="pref_default_sequence">Wähle eine Standardkartei</string>
+<string name="pref_default_sequence_summary">Legt fest, welche Kartei welcher Richtung als Standardkartei verwendet werden soll.</string>
+  
+			             <string name="pref_sync_frequency">Zeitspanne</string>   
+			             <string name="pref_sync_frequency_summary">Zeitspanne in Sekunden, nach der der Account periodisch synchronisiert wird.</string>   
+                    <string name="pref_sync_books">Bücher</string>    
+                      <string name="pref_sync_books_on">Die Vokabeln aus den Büchern werden automatisch geupdated.</string>  
+                        <string name="pref_sync_books_off">Vokabeln werden nicht automatisch mit dem Server synchronisiert.</string>  
+                        <string name="pref_sync_filing">Karteikarten</string>  
+                        <string name="pref_sync_filing_on">Fortschritt in der Kartei wird mit dem Server abgeglichen.</string>  
+                        <string name="pref_sync_filing_off">Austausch der Kareti mit dem Server findet nicht statt.</string>  
+            
+    <string name="app_name">Vocabtrain</string>
+    <string name="app_explanation">Lerne Vokabeln kapitelweise aus bekannten Lehrbüchern mit einem hybriden Lernverfahren.</string>
+
+    <!-- Strings for About dialog -->
+    <string name="about_comments">@string/app_explanation</string>
+    <string name="about_copyright">Copyright © 2011,2012 Dominik Köppl</string>
+    <string name="about_website_label">Vocabtrain</string>
+    <string name="about_website_url">http://www.devwork.org/vocabtrain</string>
+    <string name="about_email">niki@users.berlios.de</string>
+    
+        <string name="menu_filter">Filtere Tabelle</string>
+    <string name="menu_filter_short">Filtern</string>
+        <string name="layout_table_filter_hint">Filtere Tabelle nach&#8230;</string>
+        
+    <string name="menu_discard_card">Entferne Karte</string>
+    <string name="menu_discard_card_short">Entferne</string>
+    <string name="searchable_search_hint">Suche Vokabel</string>
+        
+    <string name="priority_prompt">Wähle Priorität</string>
+    <string name="priority_high">Hoch</string>
+    <string name="priority_medium">Mittel</string>
+    <string name="priority_low">Niedrig</string>
+<!--    <string name="disable">Entferne</string> -->
+
+
+    <string name="loader_search">Suchindex</string>
+    <string name="loader_search_desc">Generiere Suchindex aus dem aktuellen Kartendeck.</string>
+    <string name="loader_search_finished">Suchindex wurde generiert.</string>
+        
+    <string name="layout_dashboard_createsearch">Suchindex regenerieren</string>
+
+        
+        		
+		    <string name="update_notify_ticker">Neue Version von Vocabtrain</string>
+    
+    <string name="update_notify_title">Vocabtrain aktualisieren</string>
+    <string name="update_notify_message">Sie können eine neue Version von Vocabtrain aus dem Netz herunterladen.</string>
+		
+		
+		
+        
+        <string name="pref_veecheck_enabled">Updatebenachrichtigung</string>
+        <string name="pref_veecheck_on">Es wird automatisch überprüft, ob eine neue Version verfügbar ist.</string>
+        <string name="pref_veecheck_off">Es finden keine automatische Updatebenachrichtigungen statt.</string>
+        <string name="pref_veecheck_period">Zeitintervall</string>
+        <string name="pref_veecheck_period_summary">Einstellen der Zeitperiode, in der der Server kontaktiert wird.</string>
+        
+                    <string name="button_exchange">Austauschen</string>
+        
+            <string name="button_save">Speichern</string>
+        <string name="button_load">Laden</string>
+        
+            
+    <string name="conjugate_disable">Beibelassen</string>
+    <string name="conjugate_masu">ます-Form</string>
+    <string name="conjugate_dictionary">Wörterbuchform</string>
+    <string name="orientation_system">Systemvorgabe</string>
+    <string name="orientation_landscape">Querformat</string>
+    <string name="orientation_portrait">Hochformat</string>
+    <string name="orientation_reverse_landscape">Verkehrtes Querformat</string>
+    <string name="orientation_reverse_portrait">Verkehrtes Hochformat</string>
+    <string name="order_none">In Reihenfolge belassen</string>
+    <string name="order_random">Zufällig</string>
+    <string name="order_asc">Schlechteste Karten zuerst</string>
+    <string name="order_desc">Beste Karten zuerst</string>
+    <string name="type_prompt_basic">Wähle Basistyp</string>
+    <string name="type_prompt_special">Wähle Vokabeltyp</string>
+        
+    <string name="layout_speech_type_prompt">Aussprache soll interpretiert werden als</string>
+    <string name="romaji">Rōmaji</string>
+    <string name="hiragana">Hiragana</string>
+    <string name="katakana">Katakana</string>
+    <string name="crash_toast_text">Vocabtrain ist abgestürzt. Bitte verwenden Sie das Formular in der Benachrichtigung, um den Entwicklern eine Nachricht zukommen zu lassen!</string>
+    <string name="crash_notif_ticker_text">Unerwarteter Fehler, bitte senden Sie einen Fehlerbericht&#8230;</string>
+    <string name="crash_notif_title">Vocabtrain ist abgestürzt&#8230;</string>
+    <string name="crash_notif_text">Bitte klicken Sie hier, um die Angelegenheit zu beheben.</string>
+    <string name="crash_dialog_title">@string/crash_notif_title</string>
+    <string name="crash_dialog_text">Ein unerwarteter Fehler ist aufgetaucht, der die Anwendung zum Stoppen zwang. Bitte helfen Sie uns, diesen zu beheben, alles was Sie dazu tun müssen, ist auf &#8216;Ok&#8217; zu drücken. </string>
+    <string name="crash_dialog_comment_prompt">Sie können ein Kommentar über das Problem hier unten anlegen:</string>
+    <string name="crash_dialog_ok_toast">Der Bericht wurde in die Sendeschleife eingefügt. Vielen Dank für Ihre Unterstützung!</string>
+    <string name="pref_disable_acra">Fehler-Bericht abschalten</string>
+    <string name="pref_acra_disabled">Es wird kein Fehlerbericht erstellt</string>
+    <string name="pref_acra_enabled">Fehlerbericht eingeschaltet</string>
+    <string name="pref_acra_syslog_enabled">Sende Syslog-Daten</string>
+    <string name="pref_acra_syslog_disabled">Sende keine Syslog-Daten</string>
+    <string name="pref_acra_syslog">Senden von Syslog</string>
+    <string name="pref_acra_user_email">E-Mail Adresse</string>
+    <string name="pref_acra_user_email_summary">Sie können Ihre Adresse zur Kontaktierung angeben.</string>
+    <string name="pref_acra_alwaysaccept">Sende Fehlerbericht automatisch</string>
+    <string name="pref_acra_alwaysaccept_enabled">Sende Fehlerbericht automatisch</string>
+    <string name="pref_acra_alwaysaccept_disabled">Manuelle Auswahl zur Sendung des Fehlerberichts</string>
+    
+        
+    <string name="pref_general">Generelle Einstellungen</string>
+    <string name="pref_general_summary">Muttersprache, Datenbankpfad</string>
+    
+    <string name="pref_display">Bildschirm</string>
+    <string name="pref_display_summary">Schriftgröße, Ausrichtung, &#8230;</string>
+            <string name="pref_aids">Hilfsmittel </string>
+                        <string name="pref_aids_summary">Rōmaji, Sprachsynthesizer, &#8230;</string>
+                
+            <string name="pref_session">Sitzung</string>
+                        <string name="pref_session_summary">Abfragerichtung, Sortierung, &#8230;</string>
+                
+                    <string name="pref_tweaks">Justierung</string>
+                                        <string name="pref_tweaks_summary">Geschwindigkeitsoptimierungen</string>
+                        
+                   <string name="pref_acra">Fehlerbericht</string>
+                                           <string name="pref_acra_summary">Handhabung von Fehlern</string>
+                       
+        
+        	<string name="pref_buttonsize">Knopfgröße ändern</string>
+                           	<string name="pref_buttonsize_summary">Stellt die Höhe der Schaltflächen für das Training ein.</string>
+        	    
+	<string name="pref_fontsize">Schriftgröße ändern</string>
+    <string name="pref_language">Sprache</string>
+    <string name="pref_language_summary">Sprache, in der Sie antworten wollen</string>
+    
+    <string name="pref_reset_forgotten">Vergessene Karten zurücksetzen</string>
+    <string name="pref_reset_forgotten_on">Jede neu vergessene und auf "Null" bewertete Karte wird komplett zurückgesetzt.</string>
+    <string name="pref_reset_forgotten_off">Die Bewertung einer neu vergessene Karte wird zur Chronologie beigefügt.</string>
+    
+    <string name="pref_optimal_fontsize">Optimale Schriftgröße</string>
+    <string name="pref_optimal_fontsize_summary">Größte zu verwendende Schriftgröße beim Training</string>
+    <string name="pref_minimum_fontsize">Minimale Schriftgröße</string>
+    <string name="pref_minimum_fontsize_summary">Kleinste zu verwendende Schriftgröße beim Training</string>
+    <string name="pref_invert_colors">Invertiere Farben</string>
+    <string name="pref_invert_colors_on">Weiß auf Schwarz</string>
+    <string name="pref_invert_colors_off">Schwarz auf Weiß</string>
+    <string name="pref_fullscreen">Vollbild</string>
+    <string name="pref_fullscreen_on">Keine Statusleiste während des Trainings</string>
+    <string name="pref_fullscreen_off">Statusleiste wird während des Trainings angezeigt</string>
+    <string name="pref_fractal">Fraktalbild</string>
+    <string name="pref_fractal_summary">Generiert einen animierten Fraktalhintergrund während des Trainings.</string>
+    <string name="pref_orientation">Bildschirmausrichtung</string>
+    <string name="pref_orientation_summary">Setzt die Bildschirmausrichtung fest.</string>
+    <string name="pref_sequence">Reihenfolge</string>
+    <string name="pref_sequence_summary">Bestimmt die Reihenfolge, in der eine Karte abgeprüft wird.</string>
+    <string name="pref_second_question">Zweite Frage</string>
+    <string name="pref_second_question_on">Es werden die ersten beiden Elemente der Karteikarte gezeigt, die dritte muss beantwortet werden.</string>
+    <string name="pref_second_question_off">Es wird nur das erste Element der Karteikarte gezeigt, die beiden anderen müssen beantwortet werden.</string>
+    <string name="pref_sorting">Sortierung</string>
+    <string name="pref_sorting_summary">Sortiert vor dem Training die Karten nach einem bestimmten Schema.</string>
+    <string name="pref_tts">Sprachsynthesizer</string>
+    <string name="pref_tts_on">Vokabular wird bei Berührung vorgesprochen.</string>
+    <string name="pref_tts_off">Sprachsynthesizer ist deaktiviert.</string>
+    
+    <string name="pref_tts_auto">Vorlesen</string>
+    <string name="pref_tts_auto_on">Vokabular wird vorgesprochen.</string>
+    <string name="pref_tts_auto_off">Automatisches Vorlesen deaktiviert.</string>
+    
+            <string name="pref_noun_article">Artikel für Nomen</string>
+    <string name="pref_noun_article_summary">Anfügen von (un)bestimmte Artikel an Nomen.</string>
+        
+            <string name="noun_article_disable">Keine Artikel</string>
+            <string name="noun_article_indefinite">Unbestimmter Artikel</string>
+            <string name="noun_article_definite_unique">Nur eindeutige bestimmter Artikel</string>
+            <string name="noun_article_definite">Bestimmter Artikel</string>
+        
+    <string name="pref_textedit_romaji">Texteingaben in Rōmaji</string>
+    <string name="pref_textedit_romaji_on">Texteingaben werden von Rōmaji in Kana automatisch übersetzt.</string>
+    <string name="pref_textedit_romaji_off">Keine Übersetzung von Texteingaben in Kana.</string>
+    <string name="pref_verb_conjugation">Verbkonjugation</string>
+    <string name="pref_verb_conjugation_summary">Konjugiert Verben in die angegebene Form.</string>
+    <string name="pref_tourtips">Kurzhilfen</string>
+    <string name="pref_tourtips_on">Kurzhilfen werden eingeblendet.</string>
+    <string name="pref_tourtips_off">Kurzhilfen sind abgeschaltet.</string>
+    <string name="pref_undolist_size">Größe der Undoliste</string>
+    <string name="pref_undolist_size_summary">Je größer, desto mehr Schritte sind rückgängig machbar, desto mehr Speicher wird aber konsumiert.</string>
+    <string name="pref_ssrf_days_lookup">Intervallsuchbreite</string>
+    <string name="pref_ssrf_days_lookup_summary">Je größer, desto balancierter ist der Algorithmus, desto länger dauert aber das Auswerten einer Antwort.</string>
+    <string name="pref_default_priority">Standard-Priorität</string>
+    <string name="pref_default_priority_summary">Priorität, zu der alle neue Karten klassifiziert werden.</string>
+    <string name="pref_database_location">Datenbank-Speicherort</string>
+    <string name="pref_database_location_summary">Die Datenbank kann auf dem internen Speicher als auch auf einem externen Medium als Datei gespeichert werden.</string>
+    <string name="pref_romaji">Verwende Rōmaji</string>
+    <string name="pref_romaji_on">Wörter in Kana werden automatisch auch in Rōmaji dargestellt.</string>
+    <string name="pref_romaji_off">In der Trainingsansicht wird kein Rōmaji verwendet.</string>
+    
+    <string name="trainingchooser_select_type">Wähle Trainingsart</string>
+
+    <string name="menu_change_priority">Priorität ändern</string>
+    <string name="menu_change_priority_short">Priorität</string>
+    <string name="menu_toselection">Zur Auswahl hinzufügen</string>
+    <string name="menu_toselection_short">Zur Auswahl</string>
+    <string name="menu_tofiling">Zur Kartei hinzufügen</string>
+    <string name="menu_tofiling_short">Zur Kartei</string>
+    <string name="menu_toboth">Zur Kartei und Auswahl hinzufügen</string>
+    <string name="menu_toboth_short">Zu Beiden</string>
+    <string name="menu_refresh">Bildschirm auffrischen</string>
+    <string name="menu_refresh_short">Aktualisieren</string>
+    
+    <string name="menu_remove_from_filing">Entferne aus Kartei</string>
+    <string name="menu_remove_from_filing_short">Löschen</string>
+    <string name="menu_remove_from_selection">Entferne aus Auswahl</string>
+    <string name="menu_remove_from_selection_short">Deselektiere</string>
+    
+    <string name="menu_view_card">Betrachte Karte</string>
+    <string name="menu_view_card_short">Betrachte</string>
+    <string name="menu_edit_card">Bearbeite Karte</string>
+    <string name="menu_edit_card_short">Bearbeite</string>
+    <string name="menu_speak">Spracheingabe</string>
+    <string name="menu_speak_short">Spreche</string>
+    <string name="menu_about">Über</string>
+    <string name="menu_preferences">Einstellungen</string>
+    <string name="menu_undo">Undo</string>
+    <string name="menu_select_string">Wähle Zeichenkette</string>
+    <string name="menu_copy_to_clipboard">In die Zwischenablage kopieren</string>
+    <string name="menu_copy_to_clipboard_short">Zwischenablage</string>
+    
+    <string name="menu_lookup_reverso">Suche mit Reverso</string>
+    <string name="menu_lookup_reverso_short">Reverso</string>
+     
+     <string name="menu_lookup_dictcc">Nachschlagen unter dict.cc</string>
+    <string name="menu_lookup_dictcc_short">Dict.cc</string>
+        
+    <string name="menu_lookup_leo">Suche mit Leo</string>
+    <string name="menu_lookup_leo_short">Leo</string>
+    
+    <string name="menu_lookup_colordict">Suche mit ColorDict</string>
+    <string name="menu_lookup_colordict_short">ColorDict</string>
+    
+    <string name="menu_lookup_aarddict">Suche mit Aard Dictionary</string>
+    <string name="menu_lookup_aarddict_short">Aarddict</string>
+        
+            <string name="menu_lookup_laconjugaison">Konjugiere mit La Conjugaison</string>
+    <string name="menu_lookup_laconjugaison_short">La Conjugaison</string>
+        
+    
+    <string name="menu_lookup_quickdic">Suche in Quickdic</string>
+    <string name="menu_lookup_quickdic_short">Quickdic</string>
+    
+    
+    <string name="menu_lookup_aedict">Suche in Aedict</string>
+    <string name="menu_lookup_aedict_short">Aedict</string>
+    <string name="menu_lookup_simeji">Suche über Simeji</string>
+    <string name="menu_lookup_simeji_short">Simeji</string>
+    <string name="menu_lookup_search">allgemeine Suche</string>
+    <string name="menu_lookup_search_short">Suche</string>
+
+    <string name="sync_pref_account">Account-Einstellungen</string>
+    <string name="sync_pref_account_desc">Zeitintervall, Synchronisation der Kartei, &#8230;</string>
+    <string name="sequencechooser_title">Reihenfolge auswählen</string>
+        
+            <string name="button_tatoeba">Beispiel</string>
+        
+    <plurals name="filing_session">
+        <item quantity="one">Erste Sitzung.</item>
+        <item quantity="other">%d.te Sitzung</item>
+    </plurals>  
+    
+     <plurals name="chapters_select">
+        <item quantity="one">Ein gewähltes Kaptiel</item>
+        <item quantity="other">%d gewählte Kapiteln</item>
+    </plurals> 
+    <plurals name="filings_select">
+        <item quantity="one">Eine Kartei gewählt.</item>
+        <item quantity="other">%d Karteien gewählt.</item>
+    </plurals> 
+      
+        
+    <plurals name="cards_selected">
+        <item quantity="one">Es ist eine Karten ausgewählt.</item>
+        <item quantity="other">Es sind %d Karten ausgewählt.</item>
+    </plurals>
+    <plurals name="loader_algorithm_finished">
+        <item quantity="one">Es wurde eine Karten vom Algorithmus ausgewählt.</item>
+        <item quantity="other">%1$d Karten wurden vom Algorithmus ausgewählt.</item>
+    </plurals>
+    <plurals name="search_count">
+                <item quantity="one">Eine Karte gefunden.</item>
+        <item quantity="other">%d Karten gefunden.</item>
+    </plurals>
+    
+        <plurals name="tatoeba_count">
+                <item quantity="one">Ein Beispiel gefunden.</item>
+        <item quantity="other">%d Beispiele gefunden.</item>
+    </plurals>
+    <plurals name="loader_select_finished">
+        <item quantity="one">Eine Karten wurde ausgewählt.</item>
+        <item quantity="other">%d Karten wurden ausgewählt.</item>
+    </plurals>
+    <plurals name="loader_remove_filing_finished">
+        <item quantity="one">Eine Karte wurde aus der Kartei gelöscht.</item>
+        <item quantity="other">%d Karten wurden aus der Kartei gelöscht.</item>
+    </plurals>
+    <plurals name="loader_remove_selection_finished">
+        <item quantity="one">Eine Karte wurde aus der Auswahl entfernt.</item>
+        <item quantity="other">%d Karten wurden aus der Auswahl entfernt.</item>
+    </plurals>
+    <plurals name="loader_import_filing_finished">
+        <item quantity="one">Eine Karte wurde in die Kartei aufgenommen.</item>
+        <item quantity="other">%d Karten wurden in die Kartei aufgenommen.</item>
+    </plurals>
+    <plurals name="loader_priority_change_finished">
+        <item quantity="one">Es wurden von einer Karte die Priorität geändert.</item>
+        <item quantity="other">Es wurden von %d Karten die Priorität geändert.</item>
+    </plurals>
+
+      <plurals name="layout_booklist_cards">
+        <item quantity="one">Eine Karte</item>
+        <item quantity="other">%d Karten</item>
+    </plurals>
+        
+               <plurals name="layout_booklist_filing">
+        <item quantity="one">Eine in Kartei</item>
+        <item quantity="other">%d in Kartei</item>
+    </plurals> 
+                         <plurals name="layout_booklist_selection">
+        <item quantity="one">Eine gewählt</item>
+        <item quantity="other">%d gewählt</item>
+    </plurals>          
+                   
+      <string name="tip_sequence">Wechseln Sie die Abfragerichtung zwischen Schrift, Aussprache und Übersetzung. Die Option ist erst aktiv, wenn Sie in den Sitzungseinstellungen die Verwendung einer Kartei für alle Richtungen deaktivieren.</string>
+        <string name="tip_booklist">Verwenden Sie die Bücherliste, um Vokabular aus der Datenbank in Ihre Auswahl oder in die Kartei aufzunehmen.</string>
+        <string name="tip_filing">Die Kartei gliedert Karten in Karteiordner bezgüglich des Leitner-Systems.</string>
+        <string name="tip_algo">Der Algorithmus wählt automatisch Karten aus der Kartei nach einem ausgeklügelten System.</string>
+                 
+           <string name="tip_tableview">Karten werden in einer Tabelle zusammengefasst aufgelistet.</string>
+           <string name="tip_flashcard">Karten werden nach dem traditionellen Flashcard-Prinzip aufgedeckt.</string>
+           <string name="tip_showcard">Karten werden komplett aufgedeckt angezeigt. Durch Wischen oder Druck auf den linken/rechten Rand kann die Karte gewechselt werden.</string>
+           <string name="tip_textcard">Antwort wird zusätzlich zum Flashcard-Prinzip durch eine Texteingabe abgefragt.</string>
+           <string name="tip_createsearch">Erstellt den Suchindex, der zur Suche von Vokabeln benötigt wird. Der Suchindex wird nicht automatisch nach einem Update regenierert, s.d. nach Datenbanksänderungen die Suche inkonsistent sein kann.</string>
+           <string name="tip_sync">Aufbau einer Verbindung zum Vocabtrain-Server. Es können neue Bücher und Updates heruntergeladen und die Kartei mit dem Server synchronisiert werden.</string>
+           <string name="tip_import">Importieren einer zuvor exportierten Kartei.</string>
+           <string name="tip_export">Die Kartei kann in eine Datei auf einem externen Speichermedium als Backup oder zur Übertragung auf ein anderen Gerät abgespeichert werden.</string>
+           <string name="tip_bluetooth">Bei der Synchronisierung der Datenbank über Bluetooth müssen bereits beide Geräte gepaart sein. Das Gerät, das als Empfänger dient, wartet auf den Sender und überschreibt seine Datenbank mit der des Senders.</string>
+                    <string name="tip_booklist_remove_from_filing">Löscht die ausgewählten Kapiteln unwiderruflich aus der Kartei.</string>
+            <string name="tip_booklist_remove_from_selection">Entfernt die ausgewählten Kapiteln aus der Auswahl.</string>
+            <string name="tip_booklist_change_priority">Ändert die Priorität der ausgewählten Kapiteln. Die Priorität beeinflusst die Strenge des Algorithmus bei der Auswahl der Karten.</string>
+            <string name="tip_booklist_toselection">Fügt die ausgewählten Kapiteln in die Auswahl hinzu.</string>
+            <string name="tip_booklist_tofiling">Fügt die ausgewählten Kapiteln in die Kartei hinzu.</string>
+            <string name="tip_booklist_toboth">Fügt die ausgewählten Kapiteln sowohl in die Kartei als auch in die Auszahl ein.</string>
+            
+            
+            <string name="tip_filinglist_chart">Zeigt Diagramme zur graphischen Auswertung der Kartei und des damit resultierenden Lernerfolgs an.</string>
+            <string name="tip_filinglist_remove_from_filing">Löscht die angewählten Karteikästen aus der Kartei. Dieser Vorgang kann nicht rückgängig gemacht werden!</string>
+            <string name="tip_filinglist_remove_from_selection">Entfernt die angewählten Karteikästen aus der Auswahl, nicht aber aus der Kartei.</string>
+            <string name="tip_filinglist_toselection">Fügt die angewählten Karteikästen in die Auswahl hinzu.</string>
+            
+                        <string name="layout_dash_clear_selection_label">Auswahl aufheben</string>
+            
+            <string name="sync_button_add">Hinzufügen</string>
+            <string name="sync_button_installed">Installiert</string>
+            <string name="sync_button_remove">Entfernen</string>
+            <string name="sync_button_none">Nicht installiert</string>
+            <string name="sync_button_dontupdate">Version beibehalten</string>
+            <string name="sync_button_update">Updaten</string>
+            
+            <string name="tip_sync_tab_books">Lexikographisch geordnete Liste an installierbaren Büchern. Bei der Flaggen zeigt die obere die zu lernende Sprache und alle unteren Sprachen die verfügbaren Übersetzungen (Muttersprachen) an.</string>
+            <string name="tip_sync_tab_languages">Auswahl verfügbarer Muttersprachen. Bei mehreren Muttersprachen kann eine nach Installation in den Einstellungen ausgewählt werden.</string>
+            <string name="tip_sync_tab_checkout">Hier können abhängig von der Bücher und Spracheinstellung die Datenbank aktualisiert werden. Falls ein Account für die App registiert wurde, kann daneben auch die Kartei mit dem Server synchronisiert werden.</string>
+            <string name="tip_sync_button_add">Das Buch/die Muttersprache wird neu installiert.</string>
+            <string name="tip_sync_button_installed">Das Buch/die Muttersprache ist bereits installiert.</string>
+            <string name="tip_sync_button_remove">Das Buch/die Muttersprache wird aus der Datenbank entfernt.</string>
+            <string name="tip_sync_button_none">Das Buch/die Muttersprache können installiert werden, sind es aber (noch) nicht.</string>
+            <string name="tip_sync_button_dontupdate">Das Buch soll nicht geändert werden, obwohl eine neue Version verfügbar ist.</string>
+            <string name="tip_sync_button_update">Das Buch erhält bei der Synchronisation ein Update.</string>
+            
+                        <string name="tip_welcome_title">Willkommen!</string>
+            <string name="tip_welcome">Dieser Hilfsdialog dient als Rundführer aller wichtigen Funktionen dieser App. Falls Sie ihn dauerhaft abstellen wollen, finden Sie in den Einstellungen unter Hilfe die zugehörige Option.</string>
+            
+                        
+                             
+    <string name="select_priority">Wähle Priorität</string>
+    <string name="missing_filing">Erst als Karteikarte nutzbar</string>
+    <string name="filing_card_id_not_found">"Konnte nicht die Karte &#8216;%1$l&#8217; in der Kartei finden"</string>
+    <string name="no_grades">Bisher keiner</string>
+    <string name="loader_priority_change">Ändern der Priorität</string>
+    <string name="loader_priority_change_desc">Ändere die Priorität der ausgewählten Kapiteln.</string>
+    <string name="button_prev">Voriges</string>
+    <string name="button_next">Nächstes</string>
+
+    <string name="missing_oi_filemanager">Bitte installieren Sie dazu den OI Dateimanager von OpenIntents.</string>
+    <string name="file_override">Die Datei &#8216;%1$s&#8217; existiert. Wollen Sie sie überschreiben?</string>
+    <string name="button_override">Überschreiben</string>
+    <string name="button_cancel">Abbrechen</string>
+        <string name="button_apply">Übernehmen</string>
+        
+            <string name="sync_loader_cancelled">Operation abgebrochen.</string>
+            
+    <string name="sync_loader_timestamp">Hole Informationen</string>
+    <string name="sync_loader_timestamp_desc">Erstelle eine Liste aus den verfügbaren Büchern.</string>
+    <string name="sync_loader_book_download">Synchronisiere Bücher</string>
+    <string name="sync_loader_book_download_desc">Bücher werden mit dem Server abgeglichen.</string>
+    <string name="sync_loader_book_download_insert">Füge neue Daten in die Datenbank ein.</string>
+    <string name="sync_loader_book_download_cleanup">Säubere Datenbank von alten Daten. Es kann sein, dass der Bildschirm einfriert, was keinenfalls einen Programmabsturz bedeutet.</string>
+    <string name="sync_loader_book_download_finished">Bücher wurden erfolgreich synchronisiert.</string>
+    <string name="sync_loader_filing_download_finished">Kartei wurde erfolgreich heruntergeladen.</string>
+    <string name="sync_loader_filing_upload_finished">Kartei wurde erfolgreich hochgeladen.</string>
+            
+               
+	<string name="sync_loader_error_title">Synchronisationsproblem</string>
+   <string name="sync_loader_error">Während der Kommunikation mit dem Server ist ein Fehler aufgetreten: &#8216;%s&#8217;. </string>
+        
+        
+    <string name="sync_loader_filing_download">Lade Kartei herunter</string>
+    <string name="sync_loader_filing_download_desc">Die Kartei wird mit der auf dem Server hinterlegten Kartei ersetzt.</string>
+        
+        
+        
+        
+    <string name="sync_loader_filing_upload">Lade Kartei hoch</string>
+    <string name="sync_loader_filing_upload_desc">Auf dem Server wird der aktuelle Stand der Kartei abgesichert.</string>
+        
+        
+    <string name="button_yes">Ja</string>
+    <string name="button_later">Später</string>
+    <string name="loader_import_filing">Hole Karten</string>
+    <string name="loader_import_filing_desc">Gliedere Karten in Kartei ein</string>
+    <string name="loader_algorithm">Algorithmus wird ausgeführt</string>
+    <string name="loader_algorithm_desc">Der Algorithmus wählt Karten aus&#8230;</string>
+    <string name="loader_select">Wähle Karten aus</string>
+    <string name="loader_select_chapters_desc">Entnehme Karten aus den Buchkapiteln.</string>
+    <string name="loader_select_filing_desc">Wähle Karten aus den Karteifächern.</string>
+    <string name="porter_export_desc">Exportiere Ergebnisse</string>
+    <string name="porter_import_desc">Importiere Ergebnisse</string>
+    <string name="porter_export">Export</string>
+    <string name="porter_import">Import</string>
+    <string name="error_title">Ein Fehler ist während der Ausführung passiert</string>
+    <string name="porter_export_success">Export war erfolgreich.</string>
+    <string name="porter_import_success">Import war erfolgreich.</string>
+    <string name="file_fail_delete">Konnte die Datei &#8216;%1$s&#8217; nicht löschen.</string>
+    <string name="file_fail_write">Kann in die Datei &#8216;%1$s&#8217; nicht schreiben.</string>
+    <string name="file_fail_exists">Die Datei &#8216;%1$s&#8217; existiert nicht.</string>
+    <string name="file_fail_read">Kann die Datei &#8216;%1$s&#8217; nicht lesen.</string>
+    <string name="porter_export_longdesc">Exportiere Ergebnisse auf externes Medium.</string>
+    <string name="porter_import_longdesc">Importiere Ergebnisse von extrenen Medium.</string>
+    <string name="loader_remove">Löschen</string>
+    <string name="loader_remove_filing_disc">Entferne Karten aus der Kartei.</string>
+    <string name="loader_remove_selection_disc">Entferne Karten aus der Auswahl.</string>
+    <string name="missing_app">Die App &#8216;%s&#8217; konnte nicht gefunden werden. Bitte überprüfen Sie deren Installation.</string>
+    <string name="missing_search">Bitte installieren Sie dazu bitte eine Suchanwendung.</string>
+    <string name="search_partial">Kürze Zeichenkette für Suche</string>
+    <string name="script">Schrift</string>
+    <string name="speech">Aussprache</string>
+    <string name="vernicular">Muttersprache</string>
+    <string name="seq_first_question">Erste Frage</string>
+    <string name="seq_second_question">Zweite Frage</string>
+    <string name="seq_question">Frage</string>
+    <string name="seq_first_answer">Erste Anwort</string>
+    <string name="seq_second_answer">Zweite Antwort</string>
+    <string name="seq_answer">Antwort</string>
+    <string name="training_your_answer">Ihre Antwort ist &#8216;$1%d&#8217;</string>
+    <string name="voice_error_title">Sprachdienstfehler</string>
+    <string name="voice_error">Ein gültiger Sprachdienst konnte nicht gefunden werden. Vielleicht müssen Sie zunächst eine angemessene Anwendung dafür aus dem Marktplatz erwerben?</string>
+    <string name="voice_say">Sprechen Sie jetzt Ihre Antwort.</string>
+    <string name="tts_error_title">Sprachsynthesizefehler</string>
+    <string name="tts_language_missing_data">Um %1$s zu unterstützen, fehlen notwendige Daten.</string>
+    <string name="tts_language_not_supported">Ihr System unterstützt %1$s nicht.</string>
+    <string name="tts_missing">Es ist kein Sprachsynthesizer installieren. Wollen Sie den Marktplatz besuchen?</string>
+    <string name="training_finished">Training abgeschlossen.</string>
+
+<string name="layout_card_script">Schrift: </string>
+<string name="layout_card_speech">Aussprache: </string>
+<string name="layout_card_romaji">Rōmaji: </string>
+    
+    
+    <string name="layout_card_chapter">Kapitel</string>
+    <string name="layout_booklist_caption">Kapitel %s</string>
+<string name="layout_card_disable">Abgeschaltet</string>
+<string name="layout_card_script_comment">Kommentar in Schrift:  </string>
+<string name="layout_card_speech_comment">Kommentar für Aussprache:  </string>
+<string name="layout_card_transform_romaji">Ändere Rōmaji in: </string>
+<string name="layout_card_type">Typ: </string>
+<string name="layout_card_vernicular">Muttersprache: </string>
+<string name="layout_card_vernicular_comment">Kommentar in Muttersprache: </string>
+<string name="layout_card_vernicular_comment_gap">Kommentar in %s: </string>
+<string name="layout_card_priority">Priorität: </string>
+<string name="layout_card_comment">Kommentar: </string>
+<string name="layout_card_statistics">Statistik</string>
+<string name="layout_card_rank">Rang: </string>
+<string name="layout_card_average_grade">Notenschnitt: </string>
+<string name="layout_card_sessions">Sitzungen: </string>
+<string name="layout_card_last_session">Letzte Sitzung: </string>
+<string name="layout_card_next_interval">Nächstes Interval: </string>
+<string name="layout_card_difficulty">Schwierigkeit: </string>
+<string name="layout_card_chapters_occur">Taucht in den folgenden Kapiteln auf:</string>
+
+
+    	      <string name="layout_percent">%</string>
+    	      <string name="button_plus">+</string>
+    	      <string name="button_minus">-</string>
+
+<string name="layout_dash_books">Bücher</string>
+<string name="layout_dash_filing">Kartei</string>
+<string name="layout_dash_algo">Algo</string>
+<string name="training_type_tableview">Tabellarisch</string>
+<string name="training_type_flashcard">Lernkarten</string>
+<string name="training_type_showcard">Aufgedeckte Karten</string>
+<string name="training_type_textcard">Abfrage</string>
+<string name="layout_dash_export">Export</string>
+<string name="layout_dash_import">Import</string>
+<string name="layout_database_externalize">Externalisiere Datenbank</string>
+<string name="layout_filing_caption">Deck %s</string>
+<string name="layout_button_show">Zeige an</string>
+<string name="layout_fractal_enable">Aktiviere Fraktalgeneration </string>
+<string name="layout_fractal_preview">Vorschau</string>
+<string name="layout_fractal_position">Position:</string>
+<string name="layout_fractal_magnify">Vergrößerung: </string>
+<string name="layout_license_accept">Ich akzeptiere die Lizenzvereinbarung</string>
+<string name="layout_button_accept">Akzeptieren</string>
+<string name="layout_button_decline">Ablehnen</string>
+<string name="layout_license_view">Zeige Lizenz an</string>
+<string name="layout_button_select_file">Wähle Datei</string>
+<string name="layout_button_done">Fertig</string>
+<string name="layout_training_recalled">Erinnert</string>
+<string name="layout_training_forgotten">Vergessen</string>
+<string name="layout_training_trivial">Trivial</string>
+<string name="layout_training_easy">Leicht</string>
+<string name="layout_training_good">Passt</string>
+<string name="layout_training_tricky">Heikel</string>
+<string name="layout_training_bad">Mies</string>
+<string name="layout_training_havoc">Null</string>
+<string name="lorem_ipsum">Lorem Ipsum</string>
+<string name="register_username">Benutzername: </string>
+    <string name="register_password">Passwort: </string>
+    <string name="button_login">Einloggen</string>
+        
+<string name="pref_account">Veraltete Kontoführung (für Android &lt; 2.0)</string>
+<string name="pref_account_username">Benutzername</string>
+<string name="pref_account_username_summary">Der Name, unter dem Sie sich auf der Vocabtrain-Plattform registriert haben.</string>
+<string name="pref_account_password">Passwort</string>
+<string name="pref_account_password_summary">Das zu obigen Namen zugehörige Passwort</string>
+<string name="pref_account_check">Konto überprüfen</string>
+<string name="pref_account_check_summary">Erst nach erfolgreicher Authentifizierung ihres Kontos werden die Änderungen wirksam.</string>
+<string name="authenticator_succeed">Kontodaten sind gültig!</string>
+
+
+</resources>

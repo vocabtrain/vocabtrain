@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?> 
+   
+     <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+     
+     
+		<CheckBoxPreference android:key="sync_books"
+			android:title="@string/pref_sync_books"
+			android:summaryOn="@string/pref_sync_books_on" 
+			android:summaryOff="@string/pref_sync_books_off" 
+			android:defaultValue="true"
+		/>
+		<CheckBoxPreference android:key="sync_filing"
+			android:title="@string/pref_sync_filing"
+			android:summaryOn="@string/pref_sync_filing_on" 
+			android:summaryOff="@string/pref_sync_filing_off"
+			android:defaultValue="true" 
+		/>
+		
+		
+		<ListPreference android:key="sync_frequency" android:title="@string/pref_sync_frequency"
+			android:summary="@string/pref_sync_frequency_summary"
+			android:entries="@array/sync_frequency_entries" android:entryValues="@array/sync_frequency_values" />
+	
+    </PreferenceScreen>
+ 

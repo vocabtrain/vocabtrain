@@ -1,0 +1,98 @@
+Vocabtrain - Collaborative triple-columned vocabulary trainer with hybrid flashcard system
+Copyright (C) 2011,2012 Dominik Köppl, All rights reserved.    
+
+IMPORTANT – READ CAREFULLY: This End-User License Agreement ("EULA") is a
+legal agreement between you (either an individual or a single entity) and
+the author for the Software that accompanies the EULA. YOU AGREE TO BE BOUND BY
+THE TERMS OF THIS EULA BY INSTALLING, COPYING, OR USING THE SOFTWARE. IF YOU
+DO NOT AGREE, DO NOT INSTALL, COPY OR USE THE SOFTWARE. 
+
+1. GRANT OF LICENSE. The author grants you the following rights provided that you
+comply with all the terms and conditions of this EULA:
+
+1.1 Installation and use. You may install and use copies of the Software.
+
+1.2 You may not sell, resell, license, rent, lease, lend, or otherwise
+transfer for value, the Software. You may not license or distribute copies of
+the Software by itself or as part of any other software, product or service.
+You may not grant customers of your product or service any rights to license
+or distribute the Software. You may not license or distribute the Software or
+imply any Corporation endorsement or association with any product, service,
+entity or activity.
+
+1.3 You must defend and indemnify the author against any claims or lawsuits,
+including attorneys' fees, that arise from or result from the licensing or
+distribution of this software.
+
+2. RESERVATION OF RIGHTS AND OWNERSHIP. The author reserves all rights not
+expressly granted to you in this EULA. The Software is protected by copyright
+and other intellectual property laws and treaties. The author owns the title,
+copyright, and other intellectual property in the Software. The Software is
+licensed, not sold. This EULA does not grant you any rights to trademarks or
+service marks of the author.
+
+3. CONSENT TO USE OF DATA. You agree that the author may collect and use technical
+information gathered as part of the product support provided to you, if any,
+related to the Software. The author may use this information to improve our
+products or provide customized services or technologies in the future and will
+not disclose this information in a form that personally identifies you.
+
+4. TERMINATION. Without prejudice to any other rights, The author may terminate
+this EULA if you fail to comply with the terms and conditions of this EULA. In
+such event, you must destroy all copies of the Software and all of its
+component parts.
+
+5. DISCLAIMER OF WARRANTIES. THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT
+HOLDERS AND CONTRIBUTORS AS IS AND ANY EXPRESS OR IMPLIED WARRANTIES,
+INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
+FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. ALSO, THERE IS NO WARRANTY OR
+CONDITION OF TITLE, QUIET ENJOYMENT, QUIET POSSESSION, CORRESPONDENCE TO
+DESCRIPTION OR NON-INFRINGEMENT WITH REGARD TO THE SOFTWARE. IN NO EVENT SHALL
+THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT INCLUDING NEGLIGENCE
+OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+6. INDEMNIFICATION. YOU SHALL DEFEND, INDEMNIFY AND SAVE HARMLESS THE AUTHOR, AND
+ITS AGENTS, REPRESENTATIVES AND EMPLOYEES, FROM AND AGAINST ANY AND ALL SUITS,
+ACTIONS, LEGAL PROCEEDINGS, CLAIMS, DEMANDS, DAMAGES, LIABILITIES, COSTS AND
+EXPENSES, INCLUDING ATTORNEY'S FEES, ARISING OUT OF OR IN CONNECTION WITH OR
+CLAIMED TO ARISE OUT OF OR IN CONNECTION WITH YOUR USE OF THE SOFTWARE.
+
+7. Limitation of Liability and Remedies. Notwithstanding any damages that you
+might incur for any reason whatsoever (including, without limitation, all
+damages referenced herein and all direct or general damages in contract or
+anything else), the entire liability of the author under any provisions of this
+EULA shall be limited to the greater of the actual damages you incur in
+reasonable reliance on the Software up to the amount actually paid by you for
+the Software or US$5.00. The foregoing limitations, exclusions and disclaimers
+shall apply to the maximum extent permitted by applicable law, even if any
+remedy fails its essential purpose.
+
+8. Applicable Law. This EULA shall be governed by the laws of the country
+where the Services the System is being utilized to support are being primarily
+provided and any dispute arising under or in connection with this EULA shall
+be subject to the non-exclusive jurisdiction of a competent national court to
+which each party submits. 
+
+9. Entire Agreement; Severability. This EULA is the entire agreement between
+you and the author relating to the Software and supersedes all prior or
+contemporaneous oral or written communications, proposals and representations
+with respect to the Software or any other subject matter covered by this EULA.
+If any provision of this EULA is held to be void, invalid, unenforceable or
+illegal, the other provisions shall continue in full force and effect.
+
+Acknowledgement
+
+The program is using portions of source code published under a permissive open
+source license provided by the following authors:
+- The Android Open Source Project for various provided examples
+- Emmanuel Astier's and Kevin Gaudin's bugreporting library "acra"
+- yukuku's "IconContextMenu" source files
+- Apache Software Foundation's "HttpCore" package
+- Tomgibara's "veecheck" library
+- Nick and Tim's "Androidplot" library
+- OpenIntents' 'OI About'

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    
+
+
+    	        
+    	<FrameLayout    	     
+    	    android:id="@+id/dashboard_bottom_layout" 
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+    	     >
+    	<ProgressBar 
+    	    android:id="@+id/dashboard_progress" 
+    	    style="@android:style/Widget.ProgressBar.Horizontal"
+    	    	android:layout_width="fill_parent" android:indeterminate="false"
+    	    	android:visibility="invisible"
+	    android:layout_height="wrap_content"
+    	/>
+
+    	</FrameLayout>
+    	
+    	    
+    	    <LinearLayout  
+    	            	    	    android:id="@+id/dashboard_misc_layout" 
+    	    	    android:layout_width="fill_parent" 
+    	    	    android:orientation="vertical"
+    	    	    android:layout_above="@id/dashboard_bottom_layout"
+    	    	    android:layout_height="wrap_content"
+    	        
+    	        >
+    	    	        	        <TextView android:id="@+id/dashboard_cardscount" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+    />
+    	    	<FrameLayout 
+    	    	        	    	    android:layout_width="fill_parent" 
+    	    	    android:layout_height="wrap_content"
+>
+    	<!-- 
+    	        <Button android:text="@string/layout_button_search" android:id="@+id/dashboard_button_search" 
+    		    android:drawableLeft="@drawable/ic_action_search"
+    		    android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    	      -->   
+    	            <SeekBar android:id="@+id/dashboard_clear_selection"
+      android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dip"
+        />
+    	                
+    	        
+    	                    	<TextView
+    	                    	    android:id="@+id/dashboard_clear_selection_label"
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="wrap_content"
+    	    android:layout_gravity="right|center_vertical"
+    	    android:textColor="#FFFFFF"
+    	    android:gravity="right|center_vertical"
+    	        android:paddingRight="15dip"
+    	   
+    	    android:text="@string/layout_dash_clear_selection_label"
+    	    />
+    	            
+    	            
+    	        	</FrameLayout>
+
+</LinearLayout>
+
+    
+    	
+</merge>
+
+

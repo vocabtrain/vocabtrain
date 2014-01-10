@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+                    	<FrameLayout    	     
+    	    android:id="@+id/dashboardbasic_header_layout" 
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentTop="true"
+         android:paddingTop="10sp"
+    	     >
+    	             <TextView android:id="@+id/dashboardbasic_caption" 
+    	                 android:layout_width="wrap_content"
+    	                   android:layout_height="wrap_content"
+    	                   android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center_vertical|center_horizontal"
+                android:paddingLeft="5dip" android:paddingRight="5dip"
+                android:textStyle="bold"
+                android:paddingTop="10dip"
+                android:paddingBottom="10dip"
+                android:textSize="20dip"/>
+        </FrameLayout>
+    
+                    	
+                    	
+                	<FrameLayout    	     
+    	    android:id="@+id/dashboardbasic_bottom_layout" 
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+    	     >
+            	<ProgressBar 
+    	    android:id="@+id/dashboardbasic_progress" 
+    	    style="@android:style/Widget.ProgressBar.Horizontal"
+    	    	android:layout_width="fill_parent" android:indeterminate="false"
+    	    	android:visibility="invisible"
+	    android:layout_height="wrap_content"
+    	/>
+        
+        </FrameLayout>
+    
+    
+         <com.example.android.DashboardLayout
+             android:id="@+id/dashboardbasic_sub_main"
+          android:layout_centerInParent="true"
+            android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:layout_above="@id/dashboardbasic_bottom_layout"
+    		android:layout_below="@id/dashboardbasic_header_layout"
+         >
+        <Button
+        android:id="@+id/dashboardbasic_button_training"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/btn_dashbasic_training"
+        android:text="@string/layout_dash_sub_training" />
+    
+        <Button
+        android:id="@+id/dashboardbasic_button_sync"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/btn_dashbasic_sync"
+        android:text="@string/layout_dash_sync" />
+        </com.example.android.DashboardLayout>
+        
+        
+        <include layout="@layout/dashboard_training"
+    	    android:layout_centerInParent="true"
+    	    android:visibility="invisible"
+                        android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		    		android:layout_above="@id/dashboardbasic_bottom_layout"
+    		android:layout_below="@id/dashboardbasic_header_layout"
+             />
+        
+        
+        
+                    	
+                    	
+            <ExpandableListView android:id="@+id/dashboardbasic_booklist" 
+                android:layout_centerInParent="true"
+    	    android:visibility="invisible"
+                        android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		    		android:layout_above="@id/dashboardbasic_bottom_layout"
+    		android:layout_below="@id/dashboardbasic_header_layout"
+                        android:scrollbars="vertical"
+			android:scrollbarAlwaysDrawVerticalTrack="true"
+            />
+                    	
+        
+
+
+</RelativeLayout>

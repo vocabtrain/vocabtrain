@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+		<org.devwork.vocabtrain.FontSizePreference
+			android:defaultValue="30" android:numeric="integer"
+			android:maxLength="2" android:key="maximum_fontsize" android:title="@string/pref_optimal_fontsize"
+			android:summary="@string/pref_optimal_fontsize_summary" />
+
+
+
+
+
+		<org.devwork.vocabtrain.FontSizePreference
+			android:defaultValue="12" android:numeric="integer"
+			android:maxLength="2" android:key="minimum_fontsize" android:title="@string/pref_minimum_fontsize"
+			android:summary="@string/pref_minimum_fontsize_summary" />
+
+				<org.devwork.vocabtrain.ButtonSizePreference
+			android:defaultValue="100" android:numeric="integer"
+			android:maxLength="2" android:key="buttonsize" android:title="@string/pref_buttonsize"
+			android:summary="@string/pref_buttonsize_summary" />
+		
+
+
+		<CheckBoxPreference android:key="invert_colors"
+			android:defaultValue="false" android:title="@string/pref_invert_colors"
+			android:summaryOn="@string/pref_invert_colors_on" android:summaryOff="@string/pref_invert_colors_off" />
+
+
+
+
+
+		<CheckBoxPreference android:key="fullscreen"
+			android:defaultValue="false" android:title="@string/pref_fullscreen"
+			android:summaryOn="@string/pref_fullscreen_on" android:summaryOff="@string/pref_fullscreen_off" />
+
+
+
+
+		<ListPreference android:key="orientation"
+			android:title="@string/pref_orientation" android:summary="@string/pref_orientation_summary"
+			android:defaultValue="-1" android:entries="@array/orientation"
+			android:entryValues="@array/orientation_values" />
+			<PreferenceCategory android:title="@string/pref_eyecandy">
+
+		<CheckBoxPreference android:key="custom_skin"
+			android:defaultValue="false" android:title="@string/pref_skin"
+			android:summaryOn="@string/pref_skin_on" android:summaryOff="@string/pref_skin_off" />
+
+		<org.devwork.vocabtrain.SkinPreference 
+			android:key="custom_skin_directory"
+		    android:title="@string/pref_skin_directory"
+		    android:dependency="custom_skin"
+			android:summary="@string/pref_skin_directory_summary" />
+
+		<org.devwork.vocabtrain.FractalPreference
+			android:summary="@string/pref_fractal_summary" android:title="@string/pref_fractal" />
+</PreferenceCategory>
+
+	</PreferenceScreen>

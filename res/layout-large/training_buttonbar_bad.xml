@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    
+            <Button
+                android:id="@+id/training_button_tricky"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_training_tricky"
+                android:text="@string/layout_training_tricky" />
+
+            <Button
+                android:id="@+id/training_button_bad"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_training_bad"
+                android:text="@string/layout_training_bad" />
+
+            <Button
+                android:id="@+id/training_button_havoc"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_training_havoc"
+                android:text="@string/layout_training_havoc" />
+            
+</merge>

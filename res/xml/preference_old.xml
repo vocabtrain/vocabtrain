@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+        xmlns:my="http://schemas.android.com/apk/res/org.devwork.vocabtrain"
+     xmlns:android="http://schemas.android.com/apk/res/android">
+
+                                            
+       
+    
+    
+       <com.example.android.IconPreferenceScreen 
+           android:title="@string/pref_general" 
+           android:summary="@string/pref_general_summary" 
+           my:icon="@drawable/ic_pref_general">
+       <intent android:action="org.devwork.vocabtrain.preferences"
+           android:targetPackage="org.devwork.vocabtrain"
+           android:targetClass="org.devwork.vocabtrain.SettingsActivity$GeneralActivity" />
+        </com.example.android.IconPreferenceScreen>
+    
+        <com.example.android.IconPreferenceScreen 
+           android:title="@string/pref_display" 
+           android:summary="@string/pref_display_summary" 
+           my:icon="@drawable/ic_pref_display">
+       <intent android:action="org.devwork.vocabtrain.preferences"
+           android:targetPackage="org.devwork.vocabtrain"
+           android:targetClass="org.devwork.vocabtrain.SettingsActivity$DisplayActivity" />
+       </com.example.android.IconPreferenceScreen>
+           
+        <com.example.android.IconPreferenceScreen 
+           android:title="@string/pref_session" 
+           android:summary="@string/pref_session_summary" 
+           my:icon="@drawable/ic_pref_session">
+       <intent android:action="org.devwork.vocabtrain.preferences"
+           android:targetPackage="org.devwork.vocabtrain"
+           android:targetClass="org.devwork.vocabtrain.SettingsActivity$SessionActivity" />
+       </com.example.android.IconPreferenceScreen>
+    
+                    <com.example.android.IconPreferenceScreen 
+           android:title="@string/pref_aids" 
+           android:summary="@string/pref_aids_summary" 
+           my:icon="@drawable/ic_pref_aids">
+       <intent android:action="org.devwork.vocabtrain.preferences"
+           android:targetPackage="org.devwork.vocabtrain"
+           android:targetClass="org.devwork.vocabtrain.SettingsActivity$AidsActivity" />
+       </com.example.android.IconPreferenceScreen>
+
+                    <com.example.android.IconPreferenceScreen 
+           android:title="@string/pref_tweaks" 
+           android:summary="@string/pref_tweaks_summary" 
+           my:icon="@drawable/ic_pref_tweaks">
+       <intent android:action="org.devwork.vocabtrain.preferences"
+           android:targetPackage="org.devwork.vocabtrain"
+           android:targetClass="org.devwork.vocabtrain.SettingsActivity$TweaksActivity" />
+       </com.example.android.IconPreferenceScreen>
+
+                        
+        <com.example.android.IconPreferenceScreen 
+           android:title="@string/pref_typeface" 
+           android:summary="@string/pref_typeface_summary" 
+           my:icon="@drawable/ic_pref_typeface">
+       <intent android:action="org.devwork.vocabtrain.preferences"
+           android:targetPackage="org.devwork.vocabtrain"
+           android:targetClass="org.devwork.vocabtrain.SettingsActivity$TypefaceActivity" />
+       </com.example.android.IconPreferenceScreen>    
+            
+                        
+                        
+                    <com.example.android.IconPreferenceScreen 
+           android:title="@string/pref_acra" 
+           android:summary="@string/pref_acra_summary" 
+           my:icon="@drawable/ic_pref_acra">
+       <intent android:action="org.devwork.vocabtrain.preferences"
+           android:targetPackage="org.devwork.vocabtrain"
+           android:targetClass="org.devwork.vocabtrain.SettingsActivity$AcraActivity" />
+       </com.example.android.IconPreferenceScreen>
+
+    
+
+</PreferenceScreen>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/training_scrollview"
+    android:layout_width="fill_parent"
+    android:paddingBottom="50dip"
+    android:layout_marginRight="5dip"
+    android:layout_height="fill_parent">
+
+<RelativeLayout 
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout android:id="@+id/training_vert_layout"
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+        >
+    
+    <TextView android:id="@+id/training_first"
+    	android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_height="wrap_content"  />
+        
+        
+    	<TextView android:id="@+id/training_second" 
+       	android:layout_weight="1"
+        android:layout_width="wrap_content" 
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_height="wrap_content"  
+        />
+    </LinearLayout>
+    
+    
+    
+
+    <TextView android:id="@+id/training_third" 
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_height="wrap_content" 
+                android:layout_width="fill_parent" 
+        
+        android:layout_below="@id/training_vert_layout"
+        />
+
+        <LinearLayout
+        android:layout_below="@id/training_third"
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+        >
+    
+
+    <TextView android:id="@+id/training_first_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginRight="5dip"
+         />
+        
+    <TextView android:id="@+id/training_second_comment" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"  
+        android:layout_weight="1"
+        android:layout_marginRight="5dip"
+        />
+
+    <TextView android:id="@+id/training_third_comment" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_weight="1"
+        />
+    
+    </LinearLayout>
+    
+	       <Button android:id="@+id/training_tatoeba"
+            android:text="@string/button_tatoeba" 
+        android:layout_width="wrap_content"
+        android:gravity="left"
+        android:visibility="gone"
+        android:state_enabled="false"
+        android:layout_marginLeft="50px"
+                android:layout_below="@id/training_third"
+        android:layout_height="wrap_content" 
+	android:layout_alignParentBottom="true"
+        />
+    
+	
+</RelativeLayout>
+</ScrollView>

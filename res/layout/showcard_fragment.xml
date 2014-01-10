@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    
+    
+<include layout="@layout/training_titlebar" />
+            
+            
+<include layout="@layout/training_buttonbar" />
+    
+<include android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:layout_centerInParent="true"
+   	android:layout_below="@id/training_titlebar_layout"
+   	android:layout_above="@id/training_buttonbar_layout"
+    layout="@layout/training_fragment" />
+	
+
+
+
+</RelativeLayout>

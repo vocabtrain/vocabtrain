@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+          
+    <item android:id="@+id/menu_intent_partial"
+          android:title="@string/menu_select_string" 
+                      android:icon="@drawable/ic_menu_dict_partial_selection"
+          
+		  />
+    
+        <item android:id="@+id/menu_intent_clipboard"
+            android:icon="@android:drawable/ic_menu_gallery"
+          android:title="@string/menu_copy_to_clipboard" 
+          android:titleCondensed="@string/menu_copy_to_clipboard_short" 
+		  />
+
+    
+</menu> 
+

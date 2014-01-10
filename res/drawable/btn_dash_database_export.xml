@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/ic_dash_database_export_pressed"
+        android:state_focused="true"
+        android:state_enabled="true"
+        android:state_pressed="true" />
+    <item android:drawable="@drawable/ic_dash_database_export_disabled"
+        android:state_enabled="false"
+       />
+    <item android:drawable="@drawable/ic_dash_database_export_pressed"
+        android:state_focused="false"
+        android:state_enabled="true"
+        android:state_pressed="true" />
+    <item android:drawable="@drawable/ic_dash_database_export_selected" 
+            android:state_enabled="true"
+            android:state_focused="true" />
+    <item android:drawable="@drawable/ic_dash_database_export_default"
+        android:state_enabled="true"
+        android:state_focused="false"
+        android:state_pressed="false" />
+</selector>

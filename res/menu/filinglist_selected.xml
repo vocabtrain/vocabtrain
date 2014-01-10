@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/menu_filinglist_remove_from_filing"
+          android:icon="@android:drawable/ic_menu_delete"
+          android:orderInCategory="3"
+          android:title         ="@string/menu_remove_from_filing"
+          android:titleCondensed="@string/menu_remove_from_filing_short"
+           /> 
+     
+        <item android:id="@+id/menu_filinglist_remove_from_selection"
+          android:icon="@drawable/ic_menu_remove_from_selection"
+          android:orderInCategory="3"
+          android:title         ="@string/menu_remove_from_selection"
+          android:titleCondensed="@string/menu_remove_from_selection_short"
+           /> 
+     
+    
+              
+        <item android:id="@+id/menu_filinglist_toselection"
+          android:icon="@drawable/ic_menu_selection"
+          android:showAsAction="ifRoom|withText" 
+          android:orderInCategory="0"
+          android:title         ="@string/menu_toselection"
+          android:titleCondensed="@string/menu_toselection_short"
+          /> 
+    
+</menu> 
+

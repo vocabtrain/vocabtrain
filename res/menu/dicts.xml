@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:id="@+id/menu_intent_search"
+        android:icon="@android:drawable/ic_search_category_default"
+          android:title="@string/menu_lookup_search" 
+          android:titleCondensed="@string/menu_lookup_search_short" 
+          android:showAsAction="ifRoom|withText" 
+		  />
+    
+    <item android:id="@+id/menu_intent_quickdic"
+        android:icon="@drawable/ic_menu_dict_quickdic"
+          android:title="@string/menu_lookup_quickdic" 
+          android:titleCondensed="@string/menu_lookup_quickdic_short" 
+          android:showAsAction="ifRoom|withText" 
+		  />
+    
+        <item android:id="@+id/menu_intent_aedict" 
+            android:icon="@drawable/ic_menu_dict_aedict"
+          android:title="@string/menu_lookup_aedict" 
+          android:titleCondensed="@string/menu_lookup_aedict_short" 
+          android:showAsAction="ifRoom|withText" 
+		  />
+          
+    <item android:id="@+id/menu_intent_simeji"
+        android:icon="@drawable/ic_menu_dict_simeji"
+          android:title="@string/menu_lookup_simeji" 
+          android:titleCondensed="@string/menu_lookup_simeji_short" 
+          android:showAsAction="ifRoom|withText" 
+		  />
+
+        <item android:id="@+id/menu_intent_leo"
+        android:icon="@drawable/ic_menu_dict_leo"
+                    android:title="@string/menu_lookup_leo" 
+          android:titleCondensed="@string/menu_lookup_leo_short" 
+          android:showAsAction="ifRoom|withText" 
+		  />
+            <item android:id="@+id/menu_intent_colordict"
+        android:icon="@drawable/ic_menu_dict_colordict"
+                    android:title="@string/menu_lookup_colordict" 
+          android:titleCondensed="@string/menu_lookup_colordict_short" 
+          android:showAsAction="ifRoom|withText" 
+		  />
+                <item android:id="@+id/menu_intent_aarddict"
+        android:icon="@drawable/ic_menu_dict_aarddict"
+                    android:title="@string/menu_lookup_aarddict" 
+          android:titleCondensed="@string/menu_lookup_aarddict_short" 
+          android:showAsAction="ifRoom|withText" 
+		  />
+                    <item android:id="@+id/menu_intent_laconjugaison"
+        android:icon="@drawable/ic_menu_dict_laconjugaison"
+                    android:title="@string/menu_lookup_laconjugaison" 
+          android:titleCondensed="@string/menu_lookup_laconjugaison_short" 
+          android:showAsAction="ifRoom|withText" 
+		  />
+                    
+                                        <item android:id="@+id/menu_intent_reverso"
+        android:icon="@drawable/ic_menu_dict_reverso"
+                    android:title="@string/menu_lookup_reverso" 
+          android:titleCondensed="@string/menu_lookup_reverso_short" 
+          android:showAsAction="ifRoom|withText" 
+		  />
+                                        
+   <item android:id="@+id/menu_intent_dictcc"
+        android:icon="@drawable/ic_menu_dict_dictcc"
+                    android:title="@string/menu_lookup_dictcc" 
+          android:titleCondensed="@string/menu_lookup_dictcc_short" 
+          android:showAsAction="ifRoom|withText" 
+		  />                           
+                                        
+</menu>  
+
+    

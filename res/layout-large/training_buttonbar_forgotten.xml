@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"  android:id="@+id/training_buttonbar_forgotten_layout"
+        android:layout_width="fill_parent"
+    android:layout_height="wrap_content" android:visibility="gone"
+    >
+
+	      <Button android:id="@+id/training_button_recall"
+    	android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+    	android:text="@string/layout_training_recalled"
+    	android:drawableLeft="@drawable/ic_training_recalled"
+    	android:layout_weight="1"
+    	/>
+
+
+
+
+	
+	     <Button android:id="@+id/training_button_forgotten"
+    	android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:drawableLeft="@drawable/ic_training_forgotten"
+    	android:text="@string/layout_training_forgotten"
+    	android:layout_weight="1"
+    	/>
+	
+	     </LinearLayout>

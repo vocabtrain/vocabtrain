@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/training_buttonbar_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:orientation="horizontal" >
+
+    <include layout="@layout/training_buttonbar_forgotten" />
+
+    <TableLayout
+        android:id="@+id/training_buttonbar_fresh_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*" >
+        
+        <TableRow >
+        <include layout="@layout/training_buttonbar_good" />
+        </TableRow>
+        <TableRow >
+        <include layout="@layout/training_buttonbar_bad" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

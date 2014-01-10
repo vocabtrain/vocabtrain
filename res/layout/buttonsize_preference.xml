@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+            
+            
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    	               android:minWidth="1000dp"  
+    android:minHeight="1000dp"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+ 
+    
+    	<LinearLayout
+		android:orientation="horizontal"
+        android:layout_height="wrap_content" 
+        android:layout_width="fill_parent"
+        
+		>
+
+    	    
+		<EditText android:id="@+id/buttonsize_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+		android:inputType="number"
+		android:singleLine="true"
+        />
+		<TextView android:text="@string/layout_percent"
+		            android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+		</TextView>
+        
+            <Button android:id="@+id/buttonsize_button_plus"
+    	android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+    	android:text="@string/button_plus"
+    	android:layout_weight="1"
+    	/>
+    <Button android:id="@+id/buttonsize_button_minus"
+    	android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+    	android:text="@string/button_minus"
+    	android:layout_weight="1"
+    	/>
+   </LinearLayout>
+   		<SeekBar android:id="@+id/buttonsize_seekbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+   
+   		
+   		
+   		
+   		
+ <Button android:id="@+id/buttonsize_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:text="@string/lorem_ipsum"
+    android:gravity="center_horizontal|center_vertical"
+    
+    />
+    	    
+    	    
+    	    
+    </LinearLayout>

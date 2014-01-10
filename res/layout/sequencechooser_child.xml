@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sequencechooser_child"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:gravity="center_vertical"
+    android:checkMark="?android:attr/listChoiceIndicatorSingle"
+    android:paddingLeft="6dip"
+    android:paddingRight="6dip"
+   />
+<!--  android:textAppearance="?android:attr/textAppearanceLarge"
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+<RadioButton android:id="@+id/sequencechooser_child_radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical" 
+       />
+    
+
+ <TextView  android:id="@+id/sequencechooser_child_caption"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:text="TITLE"
+    />
+
+ </LinearLayout>
+ 
+ -->

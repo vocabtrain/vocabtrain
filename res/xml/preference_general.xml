@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+		<CheckBoxPreference android:key="basic_mode"
+			android:defaultValue="true"
+			android:title="@string/pref_basic_mode"
+			android:summaryOn="@string/pref_basic_mode_on" android:summaryOff="@string/pref_basic_mode_off" />
+
+
+    
+    
+    
+    
+		<ListPreference android:key="language" android:title="@string/pref_language"
+			android:summary="@string/pref_language_summary" />
+
+
+
+		<org.devwork.vocabtrain.DatabasePreference android:key="database" 
+			android:title="@string/pref_database_location" android:summary="@string/pref_database_location_summary" />
+		
+		
+		
+		<PreferenceCategory android:title="@string/pref_account">
+		
+		
+<EditTextPreference
+    android:key="account_username"
+    android:title="@string/pref_account_username"
+    android:summary="@string/pref_account_username_summary" 
+      android:inputType="textPersonName" 
+     />
+		
+				
+<EditTextPreference
+    android:key="account_password"
+    android:title="@string/pref_account_password"
+    android:summary="@string/pref_account_password_summary"   
+    android:inputType="textPassword" />
+		
+		<org.devwork.vocabtrain.sync.AuthenticatorCompatPreference 
+			android:title="@string/pref_account_check"
+			 android:summary="@string/pref_account_check_summary" />
+
+		</PreferenceCategory>
+		
+		
+		
+</PreferenceScreen>

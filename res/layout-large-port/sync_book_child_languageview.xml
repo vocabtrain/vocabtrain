@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+       android:id="@id/sync_book_child_language_layout"
+         android:orientation="horizontal"
+        android:layout_centerVertical="true"
+    android:layout_gravity="right"
+    android:layout_width="wrap_content"
+    android:paddingRight="?android:attr/scrollbarSize"
+    android:layout_alignParentRight="true"
+    android:layout_height="fill_parent">
+   
+    
+        <ImageView 
+        android:id="@id/sync_book_child_image_language"
+            android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:gravity="center_vertical"
+             android:contentDescription="@string/desc_sync_book_child_image_language"
+    
+        />
+        
+                <org.devwork.vocabtrain.sync.MultiFlagView 
+        android:id="@id/sync_book_child_image_translated_languages"
+            android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:gravity="center_vertical"
+        />
+
+     </LinearLayout>
+ 

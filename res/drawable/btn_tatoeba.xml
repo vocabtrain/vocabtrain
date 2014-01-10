@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+
+<item android:drawable="@drawable/anim_tatoeba_bubbles_01" android:duration="70"/>
+<item android:drawable="@drawable/anim_tatoeba_bubbles_02" android:duration="70"/>
+<item android:drawable="@drawable/anim_tatoeba_bubbles_03" android:duration="70"/>
+<item android:drawable="@drawable/anim_tatoeba_bubbles_04" android:duration="70"/>
+<item android:drawable="@drawable/anim_tatoeba_bubbles_05" android:duration="70"/>
+<item android:drawable="@drawable/anim_tatoeba_bubbles_06" android:duration="70"/>
+<item android:drawable="@drawable/anim_tatoeba_bubbles_07" android:duration="70"/>
+<item android:drawable="@drawable/anim_tatoeba_bubbles_08" android:duration="70"/>
+<item android:drawable="@drawable/anim_tatoeba_bubbles_09" android:duration="70"/>
+<item android:drawable="@drawable/anim_tatoeba_bubbles_10" android:duration="70"/>
+<item android:drawable="@drawable/anim_tatoeba_bubbles_11" android:duration="70"/>
+<item android:drawable="@drawable/anim_tatoeba_bubbles_12" android:duration="70"/>
+<item android:drawable="@drawable/anim_tatoeba_bubbles_13" android:duration="70"/>
+<item android:drawable="@drawable/anim_tatoeba_bubbles_14" android:duration="70"/>
+<item android:drawable="@drawable/anim_tatoeba_bubbles_15" android:duration="70"/>
+<item android:drawable="@drawable/anim_tatoeba_bubbles_16" android:duration="70"/>
+<item android:drawable="@drawable/anim_tatoeba_bubbles_17" android:duration="70"/>
+<item android:drawable="@drawable/anim_tatoeba_bubbles_18" android:duration="70"/>
+<item android:drawable="@drawable/anim_tatoeba_bubbles_19" android:duration="70"/>
+<item android:drawable="@drawable/anim_tatoeba_bubbles_20" android:duration="70"/>
+<item android:drawable="@drawable/anim_tatoeba_bubbles_21" android:duration="70"/>
+<item android:drawable="@drawable/anim_tatoeba_bubbles_22" android:duration="70"/>
+<item android:drawable="@drawable/anim_tatoeba_bubbles_23" android:duration="70"/>
+ </animation-list>

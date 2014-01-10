@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <EditText android:id="@+id/table_filter" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/layout_table_filter_hint"
+        android:inputType="textFilter"
+        android:visibility="gone"
+		android:singleLine="true"
+        android:maxLines="1"/>
+    
+    
+<LinearLayout 
+      android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+       
+ <TextView
+ 	android:id="@+id/table_title_script"
+    android:layout_height="fill_parent"
+    android:paddingRight="5sp"
+    android:layout_weight=".3"
+    android:text="@string/script"
+    android:layout_width="0dip"
+    />
+       
+ <TextView
+ 	android:id="@+id/table_title_speech"
+    android:layout_height="fill_parent"
+    android:paddingRight="5sp"
+    android:layout_weight=".3"
+    android:text="@string/speech"
+        android:layout_width="0dip"
+    />
+       
+ <TextView
+ 	android:id="@+id/table_title_vernicular"
+    android:layout_height="fill_parent"
+    android:layout_weight=".3"
+    android:text="@string/vernicular"
+        android:layout_width="0dip"
+    
+    />
+ 
+ </LinearLayout>
+
+        
+        <ListView android:id="@+id/tableactivity_listview" 
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="vertical"
+			android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:fastScrollEnabled="true"
+            />
+
+</LinearLayout>

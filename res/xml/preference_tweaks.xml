@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+		<org.devwork.vocabtrain.IntegerPreference
+			android:key="undolist_size" android:title="@string/pref_undolist_size"
+			android:summary="@string/pref_undolist_size_summary" android:numeric="integer"
+			android:defaultValue="5" android:maxLength="2" />
+
+
+
+
+		<org.devwork.vocabtrain.IntegerPreference
+			android:key="ssrf_days_lookup" android:title="@string/pref_ssrf_days_lookup"
+			android:summary="@string/pref_ssrf_days_lookup_summary"
+			android:numeric="integer" android:defaultValue="3" android:maxLength="2" />
+
+
+		<ListPreference android:title="@string/pref_default_priority"
+			android:summary="@string/pref_default_priority_summary" android:key="default_priority"
+			android:defaultValue="4" android:entries="@array/priorities"
+			android:entryValues="@array/priority_values" />
+
+
+
+<PreferenceCategory android:title="@string/pref_update_title">
+
+		
+		<CheckBoxPreference android:key="veecheck.enabled"
+			android:title="@string/pref_veecheck_enabled" android:summaryOn="@string/pref_veecheck_on"
+			android:summaryOff="@string/pref_veecheck_off" android:defaultValue="false" />
+
+		
+		<ListPreference android:key="veecheck.period" android:title="@string/pref_veecheck_period"
+			android:summary="@string/pref_veecheck_period_summary"
+			android:dependency="veecheck.enabled"
+			android:entries="@array/sync_frequency_entries" android:entryValues="@array/sync_frequency_values" />
+</PreferenceCategory>	
+
+
+</PreferenceScreen>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<preference-headers
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+                    <header android:fragment="org.devwork.vocabtrain.SettingsActivity$GeneralFragment"
+            android:icon="@drawable/ic_pref_general"
+            android:title="@string/pref_general"
+            android:summary="@string/pref_general_summary" />
+    
+    
+    <header android:fragment="org.devwork.vocabtrain.SettingsActivity$DisplayFragment"
+            android:icon="@drawable/ic_pref_display"
+            android:title="@string/pref_display"
+            android:summary="@string/pref_display_summary" />
+
+        <header android:fragment="org.devwork.vocabtrain.SettingsActivity$SessionFragment"
+            android:icon="@drawable/ic_pref_session"
+            android:title="@string/pref_session"
+            android:summary="@string/pref_session_summary" />
+    
+                    <header android:fragment="org.devwork.vocabtrain.SettingsActivity$AidsFragment"
+            android:icon="@drawable/ic_pref_aids"
+            android:title="@string/pref_aids"
+            android:summary="@string/pref_aids_summary" />
+                    
+                            <header android:fragment="org.devwork.vocabtrain.SettingsActivity$TweaksFragment"
+            android:icon="@drawable/ic_pref_tweaks"
+            android:title="@string/pref_tweaks"
+            android:summary="@string/pref_tweaks_summary" />
+        
+                            
+                                                        <header android:fragment="org.devwork.vocabtrain.SettingsActivity$TypefaceFragment"
+            android:icon="@drawable/ic_pref_typeface"
+            android:title="@string/pref_typeface"
+            android:summary="@string/pref_typeface_summary" />
+                           
+                        <header android:fragment="org.devwork.vocabtrain.SettingsActivity$AcraFragment"
+            android:icon="@drawable/ic_pref_acra"
+            android:title="@string/pref_acra"
+            android:summary="@string/pref_acra_summary" />
+        
+        
+</preference-headers>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+		<org.devwork.vocabtrain.SequencePreference
+			android:key="sequence" android:title="@string/pref_sequence"
+			android:summary="@string/pref_sequence_summary" />
+
+
+
+
+		<CheckBoxPreference android:key="second_question"
+			android:defaultValue="true" android:title="@string/pref_second_question"
+			android:summaryOn="@string/pref_second_question_on"
+			android:summaryOff="@string/pref_second_question_off" />
+
+
+
+
+		<ListPreference android:key="sorting" android:title="@string/pref_sorting"
+			android:summary="@string/pref_sorting_summary" android:defaultValue="1"
+			android:entries="@array/order" android:entryValues="@array/order_values" />
+
+		
+		
+		<CheckBoxPreference android:key="use_default_sequence"
+			android:defaultValue="true" android:title="@string/pref_use_default_sequence"
+			android:summaryOn="@string/pref_use_default_sequence_on" android:summaryOff="@string/pref_use_default_sequence_off" />
+
+				<ListPreference android:key="default_sequence" android:title="@string/pref_default_sequence"
+				    android:dependency="use_default_sequence"
+			android:summary="@string/pref_default_sequence_summary" />
+
+				
+		<CheckBoxPreference android:key="reset_forgotten"
+			android:defaultValue="true" android:title="@string/pref_reset_forgotten"
+			android:summaryOn="@string/pref_reset_forgotten_on" android:summaryOff="@string/pref_reset_forgotten_off" />
+				
+		
+		
+		
+</PreferenceScreen>

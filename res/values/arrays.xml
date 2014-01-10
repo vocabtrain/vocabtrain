@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<resources>
+
+    <string-array name="about_authors"> <!-- Add your name here if you helped out -->
+        <item>Dominik Köppl</item>
+    </string-array>
+    <string-array name="about_documenters"> <!-- Add your name here if you helped out -->
+        <item>Nobody</item>
+    </string-array>
+    <string-array name="about_translators"> <!-- Add your name here if you helped out, but only in the arrays.xml for the localization that you helped to translate into! -->
+        <item>Nobody</item>
+    </string-array>
+    <string-array name="about_artists"> <!-- Add your name here if you helped out -->
+        <item>Bastian Kuhn</item>
+    </string-array>
+    <string-array name="conjugations">
+        <item>@string/conjugate_disable</item>
+        <item>@string/conjugate_masu</item>
+        <item>@string/conjugate_dictionary</item>
+    </string-array>
+    <string-array name="training_types">
+        <item>@string/training_type_tableview</item>
+        <item>@string/training_type_showcard</item>
+        <item>@string/training_type_flashcard</item>
+        <item>@string/training_type_textcard</item>
+    </string-array>
+    <string-array name="priorities">
+        <item>@string/priority_high</item>
+        <item>@string/priority_medium</item>
+        <item>@string/priority_low</item>
+    </string-array>
+    <string-array name="orientation">
+        <item>@string/orientation_system</item>
+        <item>@string/orientation_landscape</item>
+        <item>@string/orientation_portrait</item>
+        <item>@string/orientation_reverse_landscape</item>
+        <item>@string/orientation_reverse_portrait</item>
+    </string-array>
+    <string-array name="order">
+        <item>@string/order_none</item>
+        <item>@string/order_random</item>
+        <item>@string/order_asc</item>
+        <item>@string/order_desc</item>
+    </string-array>
+    <string-array name="speech_types">
+        <item>@string/romaji</item>
+        <item>@string/hiragana</item>
+        <item>@string/katakana</item>
+    </string-array>
+    
+    <string-array name="training_sequence">
+        <item>@string/script</item>
+        <item>@string/speech</item>
+        <item>@string/vernicular</item>
+    </string-array>
+    <string-array name="priority_values">
+        <item>5</item>
+        <item>4</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="conjugation_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="orientation_values">
+        <item>-1</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="order_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+            <string-array name="tip_title_dashboard">
+                <item>@string/tip_welcome_title</item>
+            <item>@string/layout_dash_books</item>
+             <item>@string/layout_dash_filing</item>
+              <item>@string/layout_dash_algo</item>
+              <item>@string/layout_dash_sequence</item>
+	            <item>@string/training_type_tableview</item>
+	            <item>@string/training_type_flashcard</item>
+	            <item>@string/training_type_showcard</item>
+	            <item>@string/training_type_textcard</item>
+	            <item>@string/layout_dashboard_createsearch</item>
+	            <item>@string/layout_dash_sync</item>
+	            <item>@string/layout_dash_import</item>
+	            <item>@string/layout_dash_export</item>
+	            <item>@string/layout_dash_bluetooth</item>
+            </string-array>
+            <string-array name="tip_dashboard">
+                <item>@string/tip_welcome</item>
+            <item>@string/tip_booklist</item>
+             <item>@string/tip_filing</item>
+              <item>@string/tip_algo</item>
+               <item>@string/tip_sequence</item>
+	            <item>@string/tip_tableview</item>
+	            <item>@string/tip_flashcard</item>
+	            <item>@string/tip_showcard</item>
+	            <item>@string/tip_textcard</item>
+	            <item>@string/tip_createsearch</item>
+	            <item>@string/tip_sync</item>
+	            <item>@string/tip_import</item>
+	            <item>@string/tip_export</item>
+	            <item>@string/tip_bluetooth</item>
+            </string-array>
+            <array name="tip_icon_dashboard">
+            <item>@drawable/ic_home</item>
+            <item>@drawable/btn_dash_selection_books</item>
+            <item>@drawable/btn_dash_selection_filing</item>    
+            <item>@drawable/btn_dash_selection_algo</item>
+            <item>@drawable/btn_dash_selection_order</item>
+                <item>@drawable/btn_dash_training_tableview</item>
+                <item>@drawable/btn_dash_training_flashcard</item>
+                <item>@drawable/btn_dash_training_showcard</item>
+                <item>@drawable/btn_dash_training_textcard</item>
+                <item>@drawable/btn_dash_database_genindex</item>
+                <item>@drawable/btn_dash_database_sync</item>
+                <item>@drawable/btn_dash_database_import</item>
+                <item>@drawable/btn_dash_database_export</item>
+                <item>@drawable/btn_dash_database_bluetooth</item>
+            </array>    
+    
+            
+        <string-array name="tip_title_dashboard_selection">
+             <item>@string/tip_welcome_title</item>
+            <item>@string/layout_dash_books</item>
+             <item>@string/layout_dash_filing</item>
+              <item>@string/layout_dash_algo</item>
+              <item>@string/layout_dash_sequence</item>
+            </string-array>
+            <string-array name="tip_dashboard_selection">
+                <item>@string/tip_welcome</item>
+            <item>@string/tip_booklist</item>
+             <item>@string/tip_filing</item>
+              <item>@string/tip_algo</item>
+               <item>@string/tip_sequence</item>
+            </string-array>
+            <array name="tip_icon_dashboard_selection">
+            <item>@drawable/ic_home</item> 
+            <item>@drawable/btn_dash_selection_books</item>
+            <item>@drawable/btn_dash_selection_filing</item>    
+            <item>@drawable/btn_dash_selection_algo</item>
+            <item>@drawable/btn_dash_selection_order</item>
+            </array>    
+            
+            
+
+            
+            <string-array name="tip_title_dashboard_training">
+	            <item>@string/training_type_tableview</item>
+	            <item>@string/training_type_flashcard</item>
+	            <item>@string/training_type_showcard</item>
+	            <item>@string/training_type_textcard</item>
+            </string-array>
+            <string-array name="tip_dashboard_training">
+	            <item>@string/tip_tableview</item>
+	            <item>@string/tip_flashcard</item>
+	            <item>@string/tip_showcard</item>
+	            <item>@string/tip_textcard</item>
+            </string-array>
+            <array name="tip_icon_dashboard_training">
+                <item>@drawable/btn_dash_training_tableview</item>
+                <item>@drawable/btn_dash_training_flashcard</item>
+                <item>@drawable/btn_dash_training_showcard</item>
+                <item>@drawable/btn_dash_training_textcard</item>
+            </array>    
+            
+            
+            <string-array name="tip_title_dashboard_database">
+	            <item>@string/layout_dashboard_createsearch</item>
+	            <item>@string/layout_dash_sync</item>
+	            <item>@string/layout_dash_import</item>
+	            <item>@string/layout_dash_export</item>
+	            <item>@string/layout_dash_bluetooth</item>
+            </string-array>
+
+            <string-array name="tip_dashboard_database">
+	            <item>@string/tip_createsearch</item>
+	            <item>@string/tip_sync</item>
+	            <item>@string/tip_import</item>
+	            <item>@string/tip_export</item>
+	            <item>@string/tip_bluetooth</item>
+            </string-array>
+            <array name="tip_icon_dashboard_database">
+                <item>@drawable/btn_dash_database_genindex</item>
+                <item>@drawable/btn_dash_database_sync</item>
+                <item>@drawable/btn_dash_database_import</item>
+                <item>@drawable/btn_dash_database_export</item>
+                <item>@drawable/btn_dash_database_bluetooth</item>
+            </array>    
+            
+            <string-array name="tip_title_booklist">
+	            <item>@string/menu_remove_from_filing</item>
+	            <item>@string/menu_remove_from_selection</item>
+	            <item>@string/menu_change_priority</item>
+	            <item>@string/menu_toselection</item>
+	            <item>@string/menu_tofiling</item>
+	            <item>@string/menu_toboth</item>
+            </string-array>
+            <string-array name="tip_booklist">
+                <item>@string/tip_booklist_remove_from_filing</item>
+	            <item>@string/tip_booklist_remove_from_selection</item>
+	            <item>@string/tip_booklist_change_priority</item>
+	            <item>@string/tip_booklist_toselection</item>
+	            <item>@string/tip_booklist_tofiling</item>
+	            <item>@string/tip_booklist_toboth</item>
+            </string-array>
+            <array name="tip_icon_booklist">
+                <item>@android:drawable/ic_menu_delete</item>
+	            <item>@drawable/ic_menu_remove_from_selection</item>
+	            <item>@drawable/ic_menu_change_priority</item>
+	            <item>@drawable/ic_menu_selection</item>
+	            <item>@drawable/ic_menu_filing</item>
+	            <item>@drawable/ic_menu_both</item>
+            </array>    
+            
+    
+
+            
+            
+            
+            <string-array name="tip_title_filinglist">
+	            <item>@string/menu_chart</item>
+	            <item>@string/menu_remove_from_filing</item>
+	            <item>@string/menu_remove_from_selection</item>
+	            <item>@string/menu_toselection</item>
+            </string-array>
+            <string-array name="tip_filinglist">
+	            <item>@string/tip_filinglist_chart</item>
+	            <item>@string/tip_filinglist_remove_from_filing</item>
+	            <item>@string/tip_filinglist_remove_from_selection</item>
+	            <item>@string/tip_filinglist_toselection</item>
+            </string-array>
+            <array name="tip_icon_filinglist">
+                <item>@android:drawable/ic_menu_gallery</item>
+	            <item>@android:drawable/ic_menu_delete</item>
+	            <item>@drawable/ic_menu_remove_from_selection</item>
+	            <item>@drawable/ic_menu_selection</item>
+            </array>    
+            
+            
+         <string-array name="tip_title_sync">
+	            <item>@string/sync_tab_books</item>
+	            <item>@string/sync_tab_languages</item>
+	            <item>@string/sync_tab_checkout</item>
+	            <item>@string/sync_button_add</item>
+	            <item>@string/sync_button_installed</item>
+	            <item>@string/sync_button_remove</item>
+	            <item>@string/sync_button_none</item>
+	            <item>@string/sync_button_dontupdate</item>
+	            <item>@string/sync_button_update</item>
+            </string-array>
+            <string-array name="tip_sync">
+                <item>@string/tip_sync_tab_books</item>
+	            <item>@string/tip_sync_tab_languages</item>
+	            <item>@string/tip_sync_tab_checkout</item>
+	            <item>@string/tip_sync_button_add</item>
+	            <item>@string/tip_sync_button_installed</item>
+	            <item>@string/tip_sync_button_remove</item>
+	            <item>@string/tip_sync_button_none</item>
+	            <item>@string/tip_sync_button_dontupdate</item>
+	            <item>@string/tip_sync_button_update</item>
+            </string-array>
+            <array name="tip_icon_sync">
+	            <item>@drawable/ic_sync_tab_books</item>
+                <item>@drawable/ic_sync_tab_language</item>
+	            <item>@drawable/ic_sync_tab_checkout</item>
+                <item>@drawable/sync_add</item>
+	            <item>@drawable/sync_installed</item>
+	            <item>@drawable/sync_remove</item>
+	            <item>@drawable/sync_none</item>
+	            <item>@drawable/sync_dontupdate</item>
+	            <item>@drawable/sync_update</item>
+            </array>    
+            
+            
+            
+            
+            
+                            <string-array name="sync_frequency_values">
+                    <item>3600</item>
+                    <item>21600</item>
+                    <item>86400</item>
+                    <item>259200</item>
+                    <item>604800</item>
+                </string-array>
+
+                <array name="sync_frequency_entries">
+                    <item>@string/sync_freq_1h</item>
+                    <item>@string/sync_freq_6h</item>
+                    <item>@string/sync_freq_1d</item>
+                    <item>@string/sync_freq_3d</item>
+                    <item>@string/sync_freq_1w</item>
+                </array>
+               
+                    
+             <array name="typeface_values">
+                    <item>sans</item>
+                    <item>serif</item>
+                    <item>monospace</item>
+                </array>
+                    
+                 <array name="typeface_names">
+                    <item>Sans</item>
+                    <item>Serif</item>
+                    <item>Monospace</item>
+                </array>
+                 
+             <array name="typeface_styles">
+                    <item>@string/font_style_bold</item>
+                    <item>@string/font_style_bold_italic</item>
+                    <item>@string/font_style_italic</item>
+                    <item>@string/font_style_normal</item>
+                </array>
+                  
+                 
+                     <string-array name="noun_article">
+        <item>@string/noun_article_disable</item>
+        <item>@string/noun_article_indefinite</item>
+        <item>@string/noun_article_definite_unique</item>
+        <item>@string/noun_article_definite</item>
+    </string-array>
+                                    <string-array name="noun_article_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>  
+</resources>

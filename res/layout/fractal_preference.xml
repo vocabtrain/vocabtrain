@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    
+    <LinearLayout    android:orientation="horizontal" android:layout_width="fill_parent"    android:layout_height="wrap_content">
+    	<LinearLayout    android:orientation="vertical" android:layout_width="wrap_content"    android:layout_height="wrap_content">
+    
+    	 <CheckBox android:id="@+id/fractal_enable"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/layout_fractal_enable"
+	        />
+
+        	 <CheckBox android:id="@+id/fractal_preview"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/layout_fractal_preview"
+	        />
+
+        </LinearLayout>
+        
+    	   <ImageView  android:id="@+id/fractal_image"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:layout_margin="10dip"
+        		android:contentDescription="@string/desc_fractal"
+		   />
+    	    
+    	    
+    </LinearLayout>
+
+
+        
+        <TextView android:text="@string/layout_fractal_position"
+        android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         />
+        
+      <LinearLayout    android:orientation="horizontal" android:layout_width="fill_parent"    android:layout_height="wrap_content">
+        
+
+		<TextView
+        android:text="@string/layout_coordinate_x"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         />	
+	
+		<EditText android:id="@+id/fractal_x"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+		android:singleLine="true"
+        />
+		</LinearLayout>
+
+	 <LinearLayout    android:orientation="horizontal" android:layout_width="fill_parent"    android:layout_height="wrap_content">
+          		<TextView
+        android:text="@string/layout_coordinate_y"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         />	
+		<EditText android:id="@+id/fractal_y"
+		android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+		android:singleLine="true"
+        />
+
+		
+		
+        </LinearLayout>
+
+		<LinearLayout    android:orientation="horizontal" android:layout_width="fill_parent"    android:layout_height="wrap_content">
+
+		    <TextView android:id="@+id/cardedit_speech_label"
+        android:text="@string/layout_fractal_magnify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         />	
+		    
+		<EditText android:id="@+id/fractal_magnify"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+		android:singleLine="true"
+        />		
+        </LinearLayout>
+		    
+		    
+
+		    
+		    
+     </LinearLayout>

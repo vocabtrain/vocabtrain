@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:baselineAligned="false"
+	android:orientation="horizontal" android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+
+
+	<LinearLayout android:orientation="vertical"
+		android:layout_height="fill_parent" android:layout_weight="1"
+		android:paddingRight="5sp" android:layout_width="0dip">
+		<TextView android:id="@+id/table_child_script"
+			android:layout_height="wrap_content" android:layout_width="fill_parent" />
+		<TextView android:id="@+id/table_child_script_comment"
+			android:layout_height="wrap_content" android:layout_width="fill_parent" />
+	</LinearLayout>
+
+	<LinearLayout android:orientation="vertical"
+		android:layout_height="fill_parent" android:layout_weight="1"
+		android:paddingRight="5sp" android:layout_width="0dip">
+		<TextView android:id="@+id/table_child_vernicular"
+			android:layout_height="wrap_content" android:layout_width="fill_parent" />
+		<TextView android:id="@+id/table_child_vernicular_comment"
+			android:layout_height="wrap_content" android:layout_width="fill_parent" />
+	</LinearLayout>
+
+</LinearLayout>
+ 
+ 

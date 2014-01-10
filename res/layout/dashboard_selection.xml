@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+     <com.example.android.DashboardLayout
+         xmlns:android="http://schemas.android.com/apk/res/android"
+         android:id="@+id/dashboard_sub_selection"
+            android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		
+         >
+                 
+                  			<Button  android:drawableTop="@drawable/btn_dash_selection_order"
+                  			    style="@style/DashboardButton"
+         			    android:text="@string/layout_dash_sequence" 
+         			    android:id="@+id/dashboard_button_sequence"/>
+         
+         
+    	<Button android:id="@+id/dashboard_button_books"
+    	style="@style/DashboardButton"
+    	android:drawableTop="@drawable/btn_dash_selection_books"
+    	android:text="@string/layout_dash_books"
+    	/>
+    	    <Button android:id="@+id/dashboard_button_filing"
+    	       style="@style/DashboardButton"
+    	android:drawableTop="@drawable/btn_dash_selection_filing"
+    	android:text="@string/layout_dash_filing"
+    	/>
+
+    	<Button android:id="@+id/dashboard_button_algo"
+    	 style="@style/DashboardButton"
+    	android:drawableTop="@drawable/btn_dash_selection_algo"
+    	android:text="@string/layout_dash_algo"
+    	/>
+         
+    	
+         
+         </com.example.android.DashboardLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TextView 
+    android:id="@+id/typeface_label"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/layout_typeface_usage"
+	        />
+
+
+    
+        <EditText android:id="@+id/typeface_filename" android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:singleLine="true" android:inputType="textUri"
+		/>
+	<Button android:text="@string/layout_button_select_file" android:id="@+id/typeface_selectbutton" android:layout_width="fill_parent" android:layout_height="wrap_content"/>
+	
+
+		    
+		    
+     </LinearLayout>

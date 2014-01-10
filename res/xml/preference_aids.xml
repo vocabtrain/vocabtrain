@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+		<CheckBoxPreference android:key="tts"
+			android:defaultValue="false" android:title="@string/pref_tts"
+			android:summaryOn="@string/pref_tts_on" android:summaryOff="@string/pref_tts_off" />
+
+
+		<CheckBoxPreference android:key="tts_auto"
+			android:defaultValue="false"
+			android:dependency="tts"
+			android:title="@string/pref_tts_auto"
+			android:summaryOn="@string/pref_tts_auto_on" android:summaryOff="@string/pref_tts_auto_off" />
+
+
+
+
+
+
+
+
+		<ListPreference android:title="@string/pref_noun_article"
+			android:summary="@string/pref_noun_article_summary" android:key="noun_article"
+			android:defaultValue="0" android:entries="@array/noun_article"
+			android:entryValues="@array/noun_article_values" />
+		
+
+
+
+		<CheckBoxPreference android:key="tourtips"
+			android:title="@string/pref_tourtips" android:summaryOn="@string/pref_tourtips_on"
+			android:summaryOff="@string/pref_tourtips_off" android:defaultValue="true" />
+
+
+<PreferenceCategory android:title="@string/language_japanese">
+
+
+		<CheckBoxPreference android:key="romaji"
+			android:defaultValue="false" android:title="@string/pref_romaji"
+			android:summaryOn="@string/pref_romaji_on" android:summaryOff="@string/pref_romaji_off" />
+
+
+
+		<CheckBoxPreference android:key="textedit_romaji"
+			android:defaultValue="true" android:title="@string/pref_textedit_romaji"
+			android:summaryOn="@string/pref_textedit_romaji_on"
+			android:summaryOff="@string/pref_textedit_romaji_off" />
+
+
+		<ListPreference android:title="@string/pref_verb_conjugation"
+			android:summary="@string/pref_verb_conjugation_summary" android:key="verb_conjugation"
+			android:defaultValue="0" android:entries="@array/conjugations"
+			android:entryValues="@array/conjugation_values" />
+
+</PreferenceCategory>
+
+    
+<PreferenceCategory android:title="@string/tatoeba">
+        	<CheckBoxPreference android:key="tatoeba"
+			android:defaultValue="true" android:title="@string/pref_tatoeba"
+			android:summaryOn="@string/pref_tatoeba_on"
+			android:summaryOff="@string/pref_tatoeba_off" />
+    
+    	<org.devwork.vocabtrain.IntegerPreference
+                        android:key="tatoeba_length" android:title="@string/pref_tatoeba_length"
+                        android:summary="@string/pref_tatoeba_length_summary" android:numeric="integer"
+                        android:defaultValue="20" android:maxLength="2" />
+    	<CheckBoxPreference android:key="tatoeba_show_translations"
+			android:defaultValue="true" android:title="@string/pref_tatoeba_show_translations"
+			android:summaryOn="@string/pref_tatoeba_show_translations_on"
+			android:summaryOff="@string/pref_tatoeba_show_translations_off" />
+
+    </PreferenceCategory>
+<PreferenceCategory android:title="@string/pref_tatoeba_translations">
+<CheckBoxPreference android:key="tatoeba_translations_vernicular"
+			android:defaultValue="true" android:title="@string/pref_tatoeba_translations_vernicular"
+			android:summaryOn="@string/pref_tatoeba_translations_vernicular_on"
+			android:summaryOff="@string/pref_tatoeba_translations_vernicular_off" 
+			android:dependency="tatoeba_translations_all"
+			/>
+<CheckBoxPreference android:key="tatoeba_translations_study"
+			android:defaultValue="true" android:title="@string/pref_tatoeba_translations_study"
+			android:summaryOn="@string/pref_tatoeba_translations_study_on"
+			android:summaryOff="@string/pref_tatoeba_translations_study_off" 
+			android:dependency="tatoeba_translations_all"
+			/>
+<CheckBoxPreference android:key="tatoeba_translations_all"
+			android:defaultValue="false" android:title="@string/pref_tatoeba_translations_all"
+			android:summaryOn="@string/pref_tatoeba_translations_all_on"
+			android:summaryOff="@string/pref_tatoeba_translations_all_off" 
+			android:disableDependentsState="true"
+			/>
+    
+</PreferenceCategory>    
+    
+</PreferenceScreen>

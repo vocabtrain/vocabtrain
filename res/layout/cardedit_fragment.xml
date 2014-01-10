@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+
+<LinearLayout
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    
+    
+        
+        <TextView
+        android:text="@string/layout_card_script"
+        android:layout_width="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_height="wrap_content"
+         />
+		<EditText android:id="@+id/cardedit_script"
+		android:inputType="text"
+		android:maxLines="1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+		android:singleLine="true"
+        />
+
+
+    
+        
+        <LinearLayout    android:orientation="horizontal" android:layout_width="fill_parent"    android:layout_height="wrap_content">
+
+        
+	        <TextView android:id="@+id/cardedit_script_comment_label"
+	        android:text="@string/layout_card_script_comment"
+	        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+	        	        android:gravity="center_vertical|left"
+	         android:layout_weight="1"
+	         />
+	                 
+	        <CheckBox android:id="@+id/cardedit_script_comment_check"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+		style="@style/cardedit_check"
+	        />
+         </LinearLayout>
+         
+		<EditText android:id="@+id/cardedit_script_comment"
+		android:inputType="text"
+		android:maxLines="1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+		android:singleLine="true"
+        />
+        
+
+    
+    
+    
+    
+
+		<LinearLayout    android:orientation="horizontal" android:layout_width="fill_parent"    android:layout_height="wrap_content">
+
+
+	        <TextView android:id="@+id/cardedit_speech_label"
+	        android:text="@string/layout_card_speech"
+	        android:layout_width="0dip"
+	        android:gravity="center_vertical|left"
+	        android:layout_height="wrap_content"
+	        	         android:layout_weight="1"
+	         /> 
+
+	        <CheckBox
+	            android:id="@+id/cardedit_speech_check"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+			style="@style/cardedit_check"
+	            />
+
+        </LinearLayout>
+         
+		<EditText android:id="@+id/cardedit_speech"
+		android:inputType="textPhonetic"
+        android:layout_width="fill_parent"
+	android:maxLines="1"
+        android:layout_height="wrap_content"
+		android:singleLine="true"
+        />
+		
+		       <LinearLayout   android:id="@+id/cardedit_speech_translate_layout"  android:orientation="horizontal" android:layout_width="fill_parent"    android:layout_height="wrap_content">
+
+       <TextView android:id="@+id/cardedit_speech_translated"
+        	android:text="@string/layout_card_transform_romaji"
+	        android:layout_width="wrap_content"
+        	android:layout_height="fill_parent"
+	        android:gravity="center_vertical|left"
+	         />
+
+	             <Spinner android:id="@+id/cardedit_speech_translate_type"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:prompt="@string/layout_speech_type_prompt"
+    />
+             </LinearLayout>
+        
+        
+		
+        
+       <LinearLayout    android:orientation="horizontal" android:layout_width="fill_parent"    android:layout_height="wrap_content">
+        
+	        <TextView android:id="@+id/cardedit_speech_comment_label"
+	        android:text="@string/layout_card_speech_comment"
+	        android:layout_width="0dip"
+	        android:layout_height="wrap_content"
+	        android:gravity="center_vertical|left"
+	         android:layout_weight="1"
+	         />
+	                 
+	        <CheckBox android:id="@+id/cardedit_speech_comment_check"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+			style="@style/cardedit_check"
+	        />
+         </LinearLayout>
+         
+		<EditText android:id="@+id/cardedit_speech_comment"
+		android:inputType="textPhonetic"
+		android:maxLines="1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+		android:singleLine="true"
+        />
+		
+		
+        
+               <LinearLayout   android:id="@+id/cardedit_speech_comment_translate_layout"
+                    android:orientation="horizontal" android:layout_width="fill_parent"    android:layout_height="wrap_content">
+       <TextView android:id="@+id/cardedit_speech_comment_translated"
+        	android:text="@string/layout_card_transform_romaji"
+	        android:layout_width="wrap_content"
+        	android:layout_height="fill_parent"
+	        android:gravity="center_vertical|left"
+	         />
+	             <Spinner android:id="@+id/cardedit_speech_comment_translate_type"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:prompt="@string/layout_speech_type_prompt"
+    />
+             </LinearLayout>
+		
+        
+        
+        <TextView android:id="@+id/cardedit_vernicular_label"
+        android:text="@string/layout_card_vernicular"
+        android:layout_width="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_height="wrap_content"
+         />
+		<EditText android:id="@+id/cardedit_vernicular"
+		android:inputType="text"
+		android:maxLines="1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+		android:singleLine="true"
+        />
+	
+	     <LinearLayout    android:orientation="horizontal" android:layout_width="fill_parent"    android:layout_height="wrap_content">
+        
+	
+	                <TextView android:id="@+id/cardedit_vernicular_comment_label"
+	        android:text="@string/layout_card_vernicular_comment"
+	        android:layout_width="0dip"
+	        android:layout_height="wrap_content"
+	        	        	        android:gravity="center_vertical|left"
+	         android:layout_weight="1"
+	         />
+	                 
+	        <CheckBox android:id="@+id/cardedit_vernicular_comment_check"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+			style="@style/cardedit_check"
+	        />
+         
+      	</LinearLayout>
+         
+         
+		<EditText android:id="@+id/cardedit_vernicular_comment"
+		android:inputType="text"
+		android:maxLines="1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+		android:singleLine="true"
+        />
+		
+		
+		        
+                <LinearLayout  
+                     android:orientation="horizontal" android:layout_width="fill_parent"    android:layout_height="wrap_content">
+
+        	        <TextView 
+        	        	        android:text="@string/layout_card_type"
+	        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+	        	        android:gravity="center_vertical|left"
+	         />
+
+	             <Spinner 
+        android:id="@+id/cardedit_type_basic"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:prompt="@string/type_prompt_basic"
+    />
+    	             <Spinner 
+        android:id="@+id/cardedit_type_first"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:prompt="@string/type_prompt_special"
+    />
+    <Spinner 
+        android:id="@+id/cardedit_type_second"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:prompt="@string/type_prompt_special"
+    />
+             </LinearLayout>
+		
+		
+        
+                        <LinearLayout    android:orientation="horizontal" android:layout_width="fill_parent"    android:layout_height="wrap_content">
+
+        	        <TextView 
+        	        	        android:text="@string/layout_card_priority"
+	        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+	        	        android:gravity="center_vertical|left"
+	         />
+
+	             <Spinner  
+        android:id="@+id/cardedit_priority"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:prompt="@string/priority_prompt"
+    />
+        
+        </LinearLayout>
+        
+        
+        
+	
+		     <LinearLayout    android:orientation="horizontal" android:layout_width="fill_parent"    android:layout_height="wrap_content">
+	
+	
+	    <Button android:id="@+id/cardedit_apply"
+    	android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+    	android:text="@string/button_apply"
+    	android:layout_weight="1"
+    	/>
+    	
+    		    <Button android:id="@+id/cardedit_cancel"
+    	android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+    	android:text="@string/button_cancel"
+    	android:layout_weight="1"
+    	/>
+    	</LinearLayout>
+    	
+    	
+	
+</LinearLayout>
+</ScrollView>

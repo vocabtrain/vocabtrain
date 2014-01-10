@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+        <item android:id="@+id/menu_booklist_remove_from_filing"
+          android:icon="@android:drawable/ic_menu_delete"
+          android:orderInCategory="3"
+          android:title         ="@string/menu_remove_from_filing"
+          android:titleCondensed="@string/menu_remove_from_filing_short"/>
+    
+
+
+              <item android:id="@+id/menu_booklist_remove_from_selection"
+                  android:orderInCategory="3"
+                            android:icon="@drawable/ic_menu_remove_from_selection"
+          android:title         ="@string/menu_remove_from_selection"
+          android:titleCondensed="@string/menu_remove_from_selection_short"
+		  />
+
+
+          
+              <item android:id="@+id/menu_booklist_priority"
+                  android:orderInCategory="3"
+          android:icon="@drawable/ic_menu_change_priority"
+          android:title         ="@string/menu_change_priority"
+          android:titleCondensed="@string/menu_change_priority_short"
+		  />
+
+
+
+          
+        <item android:id="@+id/menu_booklist_toselection"
+            android:orderInCategory="0"
+          android:icon="@drawable/ic_menu_selection"
+          android:showAsAction="ifRoom|withText" 
+          android:title         ="@string/menu_toselection"
+          android:titleCondensed="@string/menu_toselection_short"
+          />
+
+
+
+        
+        <item android:id="@+id/menu_booklist_tofiling"
+          android:icon="@drawable/ic_menu_filing"
+          android:orderInCategory="0"
+          android:showAsAction="ifRoom|withText" 
+          android:title         ="@string/menu_tofiling"
+          android:titleCondensed="@string/menu_tofiling_short"
+          />
+
+
+
+        <item android:id="@+id/menu_booklist_toboth"
+          android:icon="@drawable/ic_menu_both"
+          android:orderInCategory="0"
+          android:showAsAction="ifRoom|withText" 
+          android:title         ="@string/menu_toboth"
+          android:titleCondensed="@string/menu_toboth_short"
+          />
+
+
+        
+</menu> 
+

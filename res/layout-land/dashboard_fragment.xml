@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    
+         <LinearLayout
+    	     android:id="@+id/dashboard_drawerbutton_layout" 
+         android:layout_width="wrap_content"
+         android:layout_height="fill_parent"
+    	android:layout_alignParentLeft="true"
+    	android:layout_alignParentBottom="true"
+    	android:layout_alignParentTop="true"
+    	android:orientation="vertical"
+    	
+         >
+         <include layout="@layout/dashboard_drawerbuttons" />
+         <!-- 
+           <ToggleButton 
+               android:drawableTop="@drawable/ic_unknown"
+               android:text="@string/layout_dash_sub_selection" 
+               android:id="@+id/dashboard_drawerbutton_selection" 
+               android:layout_weight="1"
+    		    android:layout_width="wrap_content" 
+    		    android:layout_height="wrap_content" />
+           
+           <ToggleButton android:text="@string/layout_dash_sub_training" android:id="@+id/dashboard_drawerbutton_training" android:layout_weight="1"  android:drawableTop="@drawable/ic_unknown"
+    		    android:layout_width="wrap_content" android:layout_height="wrap_content" />
+           <ToggleButton android:text="@string/layout_dash_sub_database" android:id="@+id/dashboard_drawerbutton_database" android:layout_weight="1"  android:drawableTop="@drawable/ic_unknown"
+    		    android:layout_width="wrap_content" android:layout_height="wrap_content" />
+          -->
+        </LinearLayout>
+        
+             <RelativeLayout
+                         android:layout_toRightOf="@id/dashboard_drawerbutton_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                  
+    <include layout="@layout/dashboard_header"/>
+       
+        <include layout="@layout/dashboard_footer"/>  
+               
+        <include layout="@layout/dashboard_selection"
+            android:layout_centerInParent="true"
+                        android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		    		android:layout_above="@id/dashboard_misc_layout"
+    		    		android:layout_toRightOf="@id/dashboard_drawerbutton_layout"
+    		android:layout_below="@+id/dashboard_header_layout"
+    		android:visibility="invisible"
+             />
+
+                     <include layout="@layout/dashboard_database"
+                         android:layout_centerInParent="true"
+                        android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		    		android:layout_above="@id/dashboard_misc_layout"
+    		    		    		    		android:layout_toRightOf="@id/dashboard_drawerbutton_layout"
+    		    		
+    		android:layout_below="@+id/dashboard_header_layout"
+    		android:visibility="invisible"
+             />
+    	<include layout="@layout/dashboard_training"
+    	    android:layout_centerInParent="true"
+    	    android:visibility="invisible"
+                        android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		    		android:layout_above="@id/dashboard_misc_layout"
+    		    		    		    		android:layout_toRightOf="@id/dashboard_drawerbutton_layout"
+    		    		
+    		android:layout_below="@id/dashboard_header_layout"
+             />
+    	
+</RelativeLayout>
+    	
+</RelativeLayout>
+
+

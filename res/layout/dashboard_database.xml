@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.android.DashboardLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dashboard_sub_database"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <Button
+        android:id="@+id/dashboard_button_createsearch"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/btn_dash_database_genindex"
+        android:text="@string/layout_dashboard_createsearch" />
+
+        <Button
+        android:id="@+id/dashboard_button_sync"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/btn_dash_database_sync"
+        android:text="@string/layout_dash_sync" />
+    
+        <Button
+        android:id="@+id/dashboard_button_import"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/btn_dash_database_import"
+        android:text="@string/layout_dash_import" />
+        
+        
+        
+    <Button
+        android:id="@+id/dashboard_button_export"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/btn_dash_database_export"
+        android:text="@string/layout_dash_export" />
+
+        <Button
+        android:id="@+id/dashboard_button_bluetooth"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/btn_dash_database_bluetooth"
+        android:text="@string/layout_dash_bluetooth" />
+
+            <Button
+                        style="@style/DashboardButton"
+                android:id="@+id/dashboard_button_dummyhelper"
+                 />
+
+
+</com.example.android.DashboardLayout>
