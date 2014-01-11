@@ -153,9 +153,9 @@
                 <string name="menu_chart_short">Graph</string>
                 <string name="menu_chart">Diagramme zeichnen</string>
                         
-                    
-                    <string name="sync_after_training">Wollen Sie Ihre erzielten Ergebnisse auf den Server spielen?</string>
-                    <string name="sync_after_training_title">Synchronisieren?</string>
+                    <string name="after_training">Wollen Sie das Training beenden?</string>
+                    <string name="sync_after_training">Wollen Sie das Training beenden, bzw. auch die erzielten Ergebnisse auf den Server einspielen?</string>
+                    <string name="after_training_title">Training beendet</string>
                     
                     <string name="plot_cards">Karten</string>
                     <string name="plot_sessions">Sitzungen</string>
@@ -641,6 +641,7 @@
     <string name="button_override">Überschreiben</string>
     <string name="button_cancel">Abbrechen</string>
         <string name="button_apply">Übernehmen</string>
+        <string name="button_exit">Beenden</string>
         
             <string name="sync_loader_cancelled">Operation abgebrochen.</string>
             
@@ -670,7 +671,7 @@
         
         
     <string name="button_yes">Ja</string>
-    <string name="button_later">Später</string>
+    <string name="button_sync">Synchronisiern</string>
     <string name="loader_import_filing">Hole Karten</string>
     <string name="loader_import_filing_desc">Gliedere Karten in Kartei ein</string>
     <string name="loader_algorithm">Algorithmus wird ausgeführt</string>

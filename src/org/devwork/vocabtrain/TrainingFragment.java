@@ -5,19 +5,21 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Locale;
-
 import org.devwork.vocabtrain.sync.SyncChangesLoader;
 import org.devwork.vocabtrain.sync.UploadFilingLoader;
 import org.devwork.vocabtrain.sync.UserData;
 import org.tatoeba.providers.ProviderInterface;
-
 import yuku.iconcontextmenu.IconContextMenu;
 import yuku.iconcontextmenu.IconContextMenu.IconContextItemSelectedListener;
+import android.annotation.SuppressLint;
+import android.annotation.TargetApi;
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.app.Dialog;
 import android.content.ContentValues;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnCancelListener;
+import android.content.DialogInterface.OnShowListener;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
@@ -64,9 +66,9 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.example.android.ActionBarFragmentActivity;
 
+@SuppressLint("ValidFragment")
 public class TrainingFragment extends DatabaseFragment implements LoaderManager.LoaderCallbacks<Cursor>
 {
 	@Override
@@ -496,7 +498,11 @@ public class TrainingFragment extends DatabaseFragment implements LoaderManager.
 		{
 			if(isCancelled()) return;
 			if(frame_caption != null) frame_caption.setText("");
-			marker = null;
+			if(marker != null) synchronized (marker)
+			{
+					marker.notifyAll();
+					marker = null;
+			}
 			if(frame_days_diff != null)
 				frame_days_diff.setText("" + interval + (days_diff > 0 ? "+" + days_diff : (days_diff == 0 ? "\u00B10" : ("" + days_diff))));
 		}
@@ -750,11 +756,8 @@ public class TrainingFragment extends DatabaseFragment implements LoaderManager.
 						@Override
 						public void onInit(final int status)
 						{
-							if(status == TextToSpeech.ERROR)
-							{
-								tts = null;
-								return;
-							}
+							if(status == TextToSpeech.ERROR) tts = null;
+							if(tts == null) return;
 
 							switch(tts.isLanguageAvailable(seq.getVernicularLocale().getLocale()))
 							{
@@ -1137,6 +1140,7 @@ public class TrainingFragment extends DatabaseFragment implements LoaderManager.
 				@Override
 				public void onClick(final View v)
 				{
+					if(playlist.isCompleted() || playlist.getCurrentCard() == null) return;
 					frame_days_diff.setText("");
 					synchronized(TrainingFragment.this)
 					{
@@ -1420,79 +1424,128 @@ public class TrainingFragment extends DatabaseFragment implements LoaderManager.
 		OnReset();
 	}
 
+	@TargetApi(Build.VERSION_CODES.FROYO)
 	protected Card OnReset()
 	{
 		if(playlist.isCompleted() || playlist.getCurrentCard() == null)
 		{
-			OnFinish();
+			
+			
 			String authToken = PreferenceManager.getDefaultSharedPreferences(getActivity()).getString("account_authToken", null);
-			if(Build.VERSION.SDK_INT < Build.VERSION_CODES.ECLAIR && authToken == null)
-			{
-				getActivity().finish();
-				return null;
-			}
-
+			final boolean syncable = Build.VERSION.SDK_INT > Build.VERSION_CODES.ECLAIR && authToken != null;
 			try
 			{
-				if(authToken == null) authToken = IncompatibleFunctions.obtainAuthToken(getActivity());
-				if(authToken == null) throw new NullPointerException();
+				if(syncable)
+				{
+					if(authToken == null) authToken = IncompatibleFunctions.obtainAuthToken(getActivity());
+					if(authToken == null) throw new NullPointerException();
+				}
+				
 				final String finalAuthToken = authToken;
 				final AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-				builder.setMessage(getString(R.string.sync_after_training)).setTitle(getString(R.string.sync_after_training_title))
-						.setNegativeButton(getString(R.string.button_later), new DialogInterface.OnClickListener()
+				builder.setMessage(getString(syncable ? R.string.sync_after_training : R.string.after_training)).setTitle(getString(R.string.after_training_title))
+						.setNegativeButton(getString(R.string.menu_undo), new DialogInterface.OnClickListener()
 						{
 							@Override
 							public void onClick(final DialogInterface dialog, final int id)
 							{
+								if(marker != null)
+								{
+									dialog.dismiss();
+									if(!getActivity().isFinishing()) getActivity().finish();
+								}
+								OnUndo();
+								dialog.dismiss();
+							}
+						})
+						.setNeutralButton(getString(R.string.button_exit), new DialogInterface.OnClickListener()
+						{
+							@Override
+							public void onClick(final DialogInterface dialog, final int id)
+							{
+								OnFinish();
 								dialog.dismiss();
 								if(!getActivity().isFinishing()) getActivity().finish();
 							}
-						}).setPositiveButton(getString(R.string.button_yes), new DialogInterface.OnClickListener()
-						{
-							@Override
-							public void onClick(final DialogInterface dialog, final int id)
-							{
-								final UserData user = new UserData(finalAuthToken, 0, 0);
-								new SyncChangesLoader(getActivity(), user, null).execute();
-								new UploadFilingLoader(getActivity(), user, new OnFinishListener()
-								{
-
-									@Override
-									public void onFinish()
-									{
-										if(!getActivity().isFinishing())
-										{
-											dialog.dismiss();
-											getActivity().finish();
-										}
-									}
-								}).execute();
-								/*
-								 * 
-								 * Log.e(TAG, "clicked"); new TimestampLoader(getActivity(), authToken, new TimestampLoader.OnFinishListener() {
-								 * 
-								 * @Override public void onFinish(BookData[] array, LanguageData[] languages, UserData user) { if(user == null) {
-								 * if(!getActivity().isFinishing()) { dialog.dismiss(); getActivity().finish(); } return; } new SyncChangesLoader(getActivity(),
-								 * user, null).execute(); new UploadFilingLoader(getActivity(), user, new OnFinishListener() {
-								 * 
-								 * @Override public void onFinish() { if(!getActivity().isFinishing()) { dialog.dismiss(); getActivity().finish(); } }
-								 * }).execute();
-								 * 
-								 * } }).execute();
-								 */
-							}
-
 						}).setOnCancelListener(new OnCancelListener()
 						{
 
 							@Override
 							public void onCancel(final DialogInterface arg0)
 							{
+								OnFinish();
 								if(!getActivity().isFinishing()) getActivity().finish();
 							}
 
 						});
+				if(syncable) builder.setPositiveButton(getString(R.string.button_sync), new DialogInterface.OnClickListener()
+					{
+						@Override
+						public void onClick(final DialogInterface dialog, final int id)
+						{									
+							OnFinish();
+							final UserData user = new UserData(finalAuthToken, 0, 0);
+							new SyncChangesLoader(getActivity(), user, null).execute();
+							new UploadFilingLoader(getActivity(), user, new OnFinishListener()
+							{
+								@Override
+								public void onFinish()
+								{
+									if(!getActivity().isFinishing())
+									{
+										dialog.dismiss();
+										getActivity().finish();
+									}
+								}
+							}).execute();
+							/*
+							 * 
+							 * Log.e(TAG, "clicked"); new TimestampLoader(getActivity(), authToken, new TimestampLoader.OnFinishListener() {
+							 * 
+							 * @Override public void onFinish(BookData[] array, LanguageData[] languages, UserData user) { if(user == null) {
+							 * if(!getActivity().isFinishing()) { dialog.dismiss(); getActivity().finish(); } return; } new SyncChangesLoader(getActivity(),
+							 * user, null).execute(); new UploadFilingLoader(getActivity(), user, new OnFinishListener() {
+							 * 
+							 * @Override public void onFinish() { if(!getActivity().isFinishing()) { dialog.dismiss(); getActivity().finish(); } }
+							 * }).execute();
+							 * 
+							 * } }).execute();
+							 */
+						}
+					});
 				final AlertDialog alert = builder.create();
+				alert.setOnShowListener(new OnShowListener () {
+					@Override
+					public void onShow(DialogInterface dialog) {
+						if(marker != null) 
+						{
+							alert.getButton(AlertDialog.BUTTON_NEGATIVE).setEnabled(false);
+							new Thread(new Runnable() {
+								@Override
+								public void run() {
+									try {
+										synchronized (marker)
+										{
+											marker.wait();
+										}
+										getActivity().runOnUiThread(new Runnable()
+										{
+											@Override
+											public void run()
+											{
+												alert.getButton(AlertDialog.BUTTON_NEGATIVE).setEnabled(true);
+											}
+										});
+									} 
+									catch (InterruptedException e) {
+									}
+								}
+							}).start();
+						}
+					}
+				});
+						
+				
 				alert.show();
 			}
 			catch(final Exception e)
