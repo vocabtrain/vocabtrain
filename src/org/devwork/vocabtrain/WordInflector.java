@@ -14,6 +14,11 @@ public class WordInflector
 	private final static int NOUN_ARTICLE_DEFINITE_UNIQUE = 2;
 	private final static int NOUN_ARTICLE_DEFINITE = 3;
 
+	public static String removeArticleFromNoun(final String noun)
+	{
+		return noun.replaceFirst("\\s*(les|la|le|une|un|des)\\s+", "");
+	}
+	
 	private static String addArticleToNoun(final Card card, final String noun, final int noun_article)
 	{
 		if(noun == null) return null;

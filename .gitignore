@@ -4,6 +4,7 @@
 bin/
 gen/
 tmp/
+gen/
 *.tmp
 *.bak
 *.swp
@@ -29,3 +30,4 @@ local.properties
 
 # TeXlipse plugin
 .texlipse
+
