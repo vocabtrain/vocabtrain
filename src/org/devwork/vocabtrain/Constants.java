@@ -48,7 +48,8 @@ public interface Constants
 	//public final static String SERVER_ROOT = "http://www.devwork.org/vocabtrain/";
 	//public final static String SERVER_ROOT = "http://web403.webbox555.server-home.org/drake/vocabtrain/";
 	//public final static String SERVER_ROOT = "http://ursaminor.informatik.uni-augsburg.de/koeppldo/vocabtrain/";
-	public final static String SERVER_ROOT = "http://ursamajor.informatik.uni-augsburg.de:2235/vocabtrain/mobile/";
+	public final static String SERVER_ROOT = "http://137.250.169.80:4000/vocabtrain/mobile/";
+	//public final static String SERVER_ROOT = "http://ursamajor.informatik.uni-augsburg.de:2235/vocabtrain/mobile/";
 	//public final static String SERVER_ROOT = "http://fb-sagittarius.informatik.uni-augsburg.de/vocabtrain/mobile/";
 	// public final static String SERVER_ROOT = "http://192.168.178.10/ludwig/vocabtrain/";
 	public final static String SERVER_QUERY = SERVER_ROOT + "books";

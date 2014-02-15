@@ -438,9 +438,15 @@ public class CardEditFragment extends DatabaseFragment
 					if(cvCardUpdate.size() > 0) db.update("cards", cvCardUpdate, "_id = ?", new String[] { "" + card.getId() });
 
 					if(cvTranslationUpdate.size() > 0)
-						db.update("translations", cvTranslationUpdate, "translation_card_id = ? AND translation_language = ?", new String[] {
-								"" + card.getId(), "" + language });
-
+					{
+						if(db.update("translations", cvTranslationUpdate, "translation_card_id = ? AND translation_language = ?", new String[] {
+								"" + card.getId(), "" + language }) == 0)
+						{
+							cvTranslationUpdate.put("translation_card_id", card.getId());
+							cvTranslationUpdate.put("translation_language", language);
+							db.insert("translations", null, cvTranslationUpdate);
+						}
+					}
 					if(card.getFiling() != null)
 					{
 						final CardFiling filing = card.getFiling();
