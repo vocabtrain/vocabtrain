@@ -128,6 +128,7 @@ public class SearchIntents
 		{
 			String conjugated = WordInflector.masu2dict(text, card.getType());
 			if(conjugated == null) conjugated = text;
+			conjugated = WordInflector.removeArticleFromNoun(conjugated);
 			switch(menu_id)
 			{
 				case R.id.menu_intent_partial:
