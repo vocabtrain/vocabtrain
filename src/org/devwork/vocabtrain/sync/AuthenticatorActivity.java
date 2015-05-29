@@ -304,7 +304,7 @@ public class AuthenticatorActivity extends AccountAuthenticatorActivity {
             // We do the actual work of authenticating the user
             // in the NetworkUtilities class.
             try {
-                return SyncFunctions.authenticate(mUsername, mPassword);
+                return SyncFunctions.authenticate(mUsername, mPassword, AuthenticatorActivity.this);
             } catch (Exception ex) {
                 Log.e(TAG, "UserLoginTask.doInBackground: failed to authenticate");
                 Log.i(TAG, ex.toString());

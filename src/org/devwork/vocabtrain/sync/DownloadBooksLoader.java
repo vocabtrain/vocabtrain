@@ -30,7 +30,9 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.database.sqlite.SQLiteDatabase;
+import android.preference.PreferenceManager;
 import android.util.Log;
 
 public class DownloadBooksLoader extends AbstractLoader
@@ -96,8 +98,9 @@ public class DownloadBooksLoader extends AbstractLoader
 				Log.e(TAG, "json: " + json);
 				final HttpClient client = new DefaultHttpClient();
 				HttpConnectionParams.setConnectionTimeout(client.getParams(), 10000); // Timeout Limit
-
-				final HttpPost post = new HttpPost(Constants.SERVER_BOOKS_DOWNLOAD);
+				 
+				
+				final HttpPost post = new HttpPost(Constants.serverUrl(PreferenceManager.getDefaultSharedPreferences(getContext()), Constants.SERVER_BOOKS_DOWNLOAD));
 
 				final StringEntity str = new StringEntity(StringUtils.unicodeEscape(json.toString()));
 				str.setContentType("application/json; charset=utf-8");

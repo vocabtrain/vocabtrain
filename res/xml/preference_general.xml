@@ -23,7 +23,12 @@
 		
 		<PreferenceCategory android:title="@string/pref_account">
 		
-		
+	<EditTextPreference
+    android:key="server_url"
+    android:title="@string/pref_server_url"
+    android:summary="@string/pref_server_url_summary" 
+      android:inputType="textUri" 
+     />	
 <EditTextPreference
     android:key="account_username"
     android:title="@string/pref_account_username"

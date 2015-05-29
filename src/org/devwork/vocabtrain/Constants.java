@@ -2,9 +2,10 @@ package org.devwork.vocabtrain;
 
 import java.text.SimpleDateFormat;
 
+import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
 
-public interface Constants
+public final class Constants
 {
 	public static final String PACKAGE_NAME = "org.devwork.vocabtrain";
 
@@ -18,9 +19,11 @@ public interface Constants
 	public static final int DEFAULT_PREFERRED_FONTSIZE = 20;
 	public static final int DEFAULT_MINIMUM_FONTSIZE = 5;
 
+	/*
 	public static final String SERVER_QUERY_VERSION = "http://devwork.org/vocabtrain/sync.php?q";
 	public static final String SERVER_DOWNLOAD = "http://devwork.org/vocabtrain/sync.php";
-
+*/
+	
 	// public static final int SSRF_SESSION_LOOKUPS = 7;
 
 	public static final int REQUEST_VOICE_REC_FOR_TEXTCARD = 1234;
@@ -45,21 +48,30 @@ public interface Constants
 	public final static int ORIENTATIONS[] = { ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE, ActivityInfo.SCREEN_ORIENTATION_PORTRAIT,
 			ActivityInfo.SCREEN_ORIENTATION_REVERSE_LANDSCAPE, ActivityInfo.SCREEN_ORIENTATION_REVERSE_PORTRAIT };
 
+	
 	//public final static String SERVER_ROOT = "http://www.devwork.org/vocabtrain/";
 	//public final static String SERVER_ROOT = "http://web403.webbox555.server-home.org/drake/vocabtrain/";
 	//public final static String SERVER_ROOT = "http://ursaminor.informatik.uni-augsburg.de/koeppldo/vocabtrain/";
-	public final static String SERVER_ROOT = "http://137.250.169.80:4000/vocabtrain/mobile/";
+	public final static String DEFAULT_SERVER_ROOT = "http://129.217.38.143:3000/vocabtrain/mobile/";
 	//public final static String SERVER_ROOT = "http://ursamajor.informatik.uni-augsburg.de:2235/vocabtrain/mobile/";
 	//public final static String SERVER_ROOT = "http://fb-sagittarius.informatik.uni-augsburg.de/vocabtrain/mobile/";
 	// public final static String SERVER_ROOT = "http://192.168.178.10/ludwig/vocabtrain/";
-	public final static String SERVER_QUERY = SERVER_ROOT + "books";
-	public final static String SERVER_AUTH = SERVER_ROOT + "auth";
-	public static final String SERVER_CHANGES_UPLOAD = SERVER_ROOT + "delta";
-	public static final String SERVER_FILING_UPLOAD = SERVER_ROOT + "filing/upload";
-	public static final String SERVER_FILING_DOWNLOAD = SERVER_ROOT + "filing/download";
-	public static final String SERVER_BOOKS_DOWNLOAD = SERVER_ROOT + "download";
-	public static final String SERVER_VEECHECK = SERVER_ROOT + "veecheck.xml";
+	
+	public final static String serverUrl(SharedPreferences prefs, String s) {
+		return prefs.getString("server_url", Constants.DEFAULT_SERVER_ROOT) + s;
+	}
+	
+	
+	public final static String SERVER_QUERY = "books";
+	public final static String SERVER_AUTH =  "auth";
+	public static final String SERVER_CHANGES_UPLOAD = "delta";
+	public static final String SERVER_FILING_UPLOAD = "filing/upload";
+	public static final String SERVER_FILING_DOWNLOAD = "filing/download";
+	public static final String SERVER_BOOKS_DOWNLOAD = "download";
+	public static final String SERVER_VEECHECK = "veecheck.xml";
 
+	
+	
 	public final static SimpleDateFormat jsonDateFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS");
 	public final static SimpleDateFormat sqliteDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS z");
 }

@@ -783,6 +783,9 @@
     <string name="register_password">Passwort: </string>
     <string name="button_login">Einloggen</string>
         
+    <string name="pref_server_url">Server URI</string>
+<string name="pref_server_url_summary">Die HTTP-Adresse des Synchronisationsservers.</string>
+    
 <string name="pref_account">Veraltete Kontoführung (für Android &lt; 2.0)</string>
 <string name="pref_account_username">Benutzername</string>
 <string name="pref_account_username_summary">Der Name, unter dem Sie sich auf der Vocabtrain-Plattform registriert haben.</string>

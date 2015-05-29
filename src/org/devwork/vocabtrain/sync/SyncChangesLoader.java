@@ -28,6 +28,7 @@ import android.content.DialogInterface;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.AsyncTask;
+import android.preference.PreferenceManager;
 import android.support.v4.app.FragmentActivity;
 import android.util.Log;
 
@@ -98,7 +99,8 @@ public class SyncChangesLoader extends AsyncTask<Void, String, Void>
 				final HttpClient client = new DefaultHttpClient();
 				HttpConnectionParams.setConnectionTimeout(client.getParams(), 10000); // Timeout Limit
 
-				final HttpPost post = new HttpPost(Constants.SERVER_CHANGES_UPLOAD);
+				final HttpPost post = new HttpPost(Constants.serverUrl(PreferenceManager.getDefaultSharedPreferences(context), Constants.SERVER_CHANGES_UPLOAD));
+
 				post.addHeader("Authorization", "token " + user.getAuthToken());
 				final StringEntity str = new StringEntity(StringUtils.unicodeEscape(json.toString()));
 				str.setContentType("application/json; charset=utf-8");

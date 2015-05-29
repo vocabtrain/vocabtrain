@@ -20,6 +20,7 @@ import org.devwork.vocabtrain.OnFinishListener;
 import org.devwork.vocabtrain.R;
 
 import android.content.Context;
+import android.preference.PreferenceManager;
 import android.util.Log;
 
 public class DownloadFilingLoader extends AbstractLoader {
@@ -58,7 +59,8 @@ public class DownloadFilingLoader extends AbstractLoader {
 		try 
 		{
 			if(isCancelled()) return null;
-			final HttpPost post = new HttpPost(Constants.SERVER_FILING_DOWNLOAD);
+			final HttpPost post = new HttpPost(Constants.serverUrl(PreferenceManager.getDefaultSharedPreferences(getContext()), Constants.SERVER_FILING_DOWNLOAD));
+			
 			post.addHeader("Authorization", "token " + user.getAuthToken());
 	        final HttpResponse response = SyncFunctions.getHttpClient().execute(post);
 	        final HttpEntity responseEntity = response.getEntity();

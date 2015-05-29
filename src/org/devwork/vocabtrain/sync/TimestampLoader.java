@@ -20,6 +20,7 @@ import org.json.JSONObject;
 
 import android.content.Context;
 import android.os.Build;
+import android.preference.PreferenceManager;
 import android.util.Log;
 
 public class TimestampLoader extends AbstractLoader
@@ -62,7 +63,8 @@ public class TimestampLoader extends AbstractLoader
 			Log.e(TAG, "Starting");
 			if(isCancelled()) return null;
 			final ArrayList<NameValuePair> params = new ArrayList<NameValuePair>();
-			final HttpPost post = new HttpPost(Constants.SERVER_QUERY);
+			final HttpPost post = new HttpPost(Constants.serverUrl(PreferenceManager.getDefaultSharedPreferences(getContext()), Constants.SERVER_QUERY));
+
 
 			if(authToken == null && Build.VERSION.SDK_INT >= Build.VERSION_CODES.ECLAIR) authToken = IncompatibleFunctions.obtainAuthToken(getContext());
 			if(authToken != null) post.addHeader("Authorization", "token " + authToken);
