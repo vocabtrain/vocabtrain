@@ -39,7 +39,9 @@ public class ImportSelectionFromChaptersLoader extends ChapterBatchLoader
 	    	db.execSQL("insert into selection (selection_card_id) select cards._id from cards LEFT JOIN selection on selection_card_id = cards._id " + 
 	    			getWhereClause(db) + 
 	    			" AND selection_card_id is null " +
-	    			"GROUP BY cards._id");
+	    			"GROUP BY cards._id"
+	    			+ (limit < 0 ? "" : " LIMIT " + limit)
+	    			);
 	    	sum = DatabaseFunctions.getRowsAffected(db);
 		}
 

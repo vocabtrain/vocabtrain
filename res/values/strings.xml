@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    
+    <string name="limitdialog_howmany">Wieviele Karten?</string>
+        <string name="button_all">Alle</string>
+    
+    
 <string name="layout_dash_bluetooth">Bluetooth</string>
 <string name="no_bluetooth_title">Kein Bluetooth</string>
 <string name="no_bluetooth">Ihr Gerät ist leider nicht Bluetooth-fähig.</string>

@@ -33,7 +33,10 @@ public class ChangePriorityLoader extends ChapterBatchLoader
 		{
 //			String sql = "update filing set filing_priority=( SELECT ? FROM cards " + getWhereClause(db) + ")";
 	//		Log.e("SQL", sql);
-	    	db.execSQL("UPDATE filing SET filing_priority = ? WHERE filing_sequence = ? AND filing_card_id IN ( SELECT cards._id FROM cards " + getWhereClause(db) + ")", new String[] { "" + priority.get(), "" + sequence});
+	    	db.execSQL("UPDATE filing SET filing_priority = ? WHERE filing_sequence = ? AND filing_card_id IN ( SELECT cards._id FROM cards " + 
+	    			getWhereClause(db) + 
+	    			(limit < 0 ? "" : " LIMIT " + limit) +
+	    			")", new String[] { "" + priority.get(), "" + sequence});
 	    	sum = DatabaseFunctions.getRowsAffected(db);
 		}
 
