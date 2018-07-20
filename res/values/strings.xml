@@ -2,6 +2,8 @@
 <resources>
     
     <string name="limitdialog_howmany">Wieviele Karten?</string>
+    
+        <string name="limitdialog_onlynotfiling">Nur frische Karten (nicht aus der Kartei)</string>
         <string name="button_all">Alle</string>
     
     

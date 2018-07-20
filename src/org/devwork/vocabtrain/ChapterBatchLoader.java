@@ -23,6 +23,7 @@ public abstract class ChapterBatchLoader implements OnDismissListener
 	protected OnFinishListener onfinish = null;
 	protected final boolean isSecondaryProcess;
 	protected int limit = -1;
+	protected boolean notInFiling = false;
 	private final Integer[] chapter_ids;
 	private final FragmentActivity activity;
 	
@@ -74,13 +75,15 @@ public abstract class ChapterBatchLoader implements OnDismissListener
 		}
 	
 	}
-	public void executeOnLimit(int limit) {
+	public void executeOnLimit(int limit, boolean notInFiling) {
 		this.limit = limit;
+		this.notInFiling = notInFiling;
 		if(!dialogDismissed && !progressDialog.isAdded())
 			progressDialog.show(activity.getSupportFragmentManager(), TAG);
 		final BasicTask task = createTask();
 		task.execute(chapter_ids);	
 	}
+	
 	
 	private boolean dialogDismissed = false; 
 
@@ -93,7 +96,9 @@ public abstract class ChapterBatchLoader implements OnDismissListener
 	
 	protected String getWhereClause(SQLiteDatabase db)
 	{
-		StringBuilder query = new StringBuilder(" JOIN `content` ON `content_card_id` = `cards`.`_id` WHERE `content_chapter_id` in (");
+		StringBuilder query = new StringBuilder();
+		if(notInFiling) query.append(" LEFT JOIN `filing` ON `filing_card_id` = `cards`.`_id`");
+		query.append(" JOIN `content` ON `content_card_id` = `cards`.`_id` WHERE `content_chapter_id` in (");
 		for(int lesson_id : chapter_ids)
 		{
 			query.append('\'');;
@@ -102,6 +107,7 @@ public abstract class ChapterBatchLoader implements OnDismissListener
 		}
 		query.deleteCharAt(query.length()-1);
 		query.append(')');
+		if(notInFiling) query.append(" AND `filing_card_id` is null");
 		return query.toString();
 	}
 	
