@@ -45,8 +45,9 @@ public class ImportFilingLoader extends ChapterBatchLoader
 				if(sessionCursor.getCount() == 1 && sessionCursor.moveToFirst()) session = sessionCursor.getLong(0);
 				sessionCursor.close();
 			}
-			db.execSQL("insert into filing (filing_session, filing_priority, filing_rank, filing_sequence, filing_card_id) select ?, ?, ?, ?, `cards`.`_id` FROM cards " + " left join filing on filing_card_id = cards._id AND filing_sequence = ? " + getWhereClause(db) + " AND filing_card_id is null GROUP BY cards._id"
-
+			db.execSQL("insert into filing (filing_session, filing_priority, filing_rank, filing_sequence, filing_card_id) select ?, ?, ?, ?, `cards`.`_id` FROM cards " + " left join filing on filing_card_id = cards._id AND filing_sequence = ? " + getWhereClause(db) + 
+					" AND filing_card_id is null GROUP BY cards._id"
+					+ (limit < 0 ? "" : " LIMIT " + limit)
 			, new String[] { "" + session, "" + CardFiling.Priority.get(default_priority).get(), "0", "" + sequence, "" + sequence });
 			sum = DatabaseFunctions.getRowsAffected(db);
 		}

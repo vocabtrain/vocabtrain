@@ -127,7 +127,7 @@ public class Authenticator extends AbstractAccountAuthenticator {
         final AccountManager am = AccountManager.get(mContext);
         final String password = am.getPassword(account);
         if (password != null) {
-            final String authToken = SyncFunctions.authenticate(account.name, password);
+            final String authToken = SyncFunctions.authenticate(account.name, password, mContext);
             if (!TextUtils.isEmpty(authToken)) {
                 final Bundle result = new Bundle();
                 result.putString(AccountManager.KEY_ACCOUNT_NAME, account.name);

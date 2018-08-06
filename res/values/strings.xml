@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    
+    <string name="limitdialog_howmany">Wieviele Karten?</string>
+    
+        <string name="limitdialog_onlynotfiling">Nur frische Karten (nicht aus der Kartei)</string>
+        <string name="button_all">Alle</string>
+    
+    
 <string name="layout_dash_bluetooth">Bluetooth</string>
 <string name="no_bluetooth_title">Kein Bluetooth</string>
 <string name="no_bluetooth">Ihr Gerät ist leider nicht Bluetooth-fähig.</string>
@@ -783,6 +790,9 @@
     <string name="register_password">Passwort: </string>
     <string name="button_login">Einloggen</string>
         
+    <string name="pref_server_url">Server URI</string>
+<string name="pref_server_url_summary">Die HTTP-Adresse des Synchronisationsservers.</string>
+    
 <string name="pref_account">Veraltete Kontoführung (für Android &lt; 2.0)</string>
 <string name="pref_account_username">Benutzername</string>
 <string name="pref_account_username_summary">Der Name, unter dem Sie sich auf der Vocabtrain-Plattform registriert haben.</string>

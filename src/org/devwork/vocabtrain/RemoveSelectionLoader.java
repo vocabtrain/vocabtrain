@@ -26,7 +26,10 @@ public class RemoveSelectionLoader extends ChapterBatchLoader
 		{
 			String sql = "delete from selection WHERE selection_card_id IN ( SELECT cards._id FROM cards " + getWhereClause(db) + ")";
 			Log.e("SQL", sql);
-	    	db.execSQL("delete from selection WHERE selection_card_id IN ( SELECT cards._id FROM cards " + getWhereClause(db) + ")", new String[] {});
+	    	db.execSQL("delete from selection WHERE selection_card_id IN ( SELECT cards._id FROM cards " + 
+			getWhereClause(db) +
+			(limit < 0 ? "" : " LIMIT " + limit) +
+			")", new String[] {});
 	    	sum = DatabaseFunctions.getRowsAffected(db);
 		}
 		

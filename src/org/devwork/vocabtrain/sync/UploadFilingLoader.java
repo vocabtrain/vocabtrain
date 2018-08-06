@@ -28,6 +28,7 @@ import org.devwork.vocabtrain.R;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
+import android.preference.PreferenceManager;
 import android.util.Log;
 
 public class UploadFilingLoader extends AbstractLoader
@@ -90,7 +91,7 @@ public class UploadFilingLoader extends AbstractLoader
 			post.addHeader(multipartEntity.getContentType());
 			post.setEntity(multipartEntity);
 			 */
-			final HttpPost post = new HttpPost(Constants.SERVER_FILING_UPLOAD);
+			final HttpPost post = new HttpPost(Constants.serverUrl(PreferenceManager.getDefaultSharedPreferences(getContext()), Constants.SERVER_FILING_UPLOAD));
 			post.addHeader("Authorization", "token " + user.getAuthToken());
 			post.setEntity(new FileEntity(infileZ, "application/gzip-compressed"));
 			

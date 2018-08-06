@@ -31,7 +31,10 @@ public class RemoveFilingLoader extends ChapterBatchLoader
 		{
 			//String sql = "delete from filing WHERE filing_card_id IN ( SELECT cards._id FROM cards " + getWhereClause(db) + ")";
 			//Log.e("SQL", sql);
-	    	db.execSQL("delete from filing WHERE filing_sequence = ? AND filing_card_id IN ( SELECT cards._id FROM cards " + getWhereClause(db) + ")", new String[] {"" + sequence });
+	    	db.execSQL("delete from filing WHERE filing_sequence = ? AND filing_card_id IN " +
+	    			"( SELECT cards._id FROM cards " + getWhereClause(db) + 
+	    			(limit < 0 ? "" : " LIMIT " + limit) +
+	    			")", new String[] {"" + sequence });
 	    	sum = DatabaseFunctions.getRowsAffected(db);
 		}
 

@@ -2,6 +2,7 @@ package org.devwork.vocabtrain;
 
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnDismissListener;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.AsyncTask;
 import android.support.v4.app.FragmentActivity;
@@ -17,8 +18,12 @@ public abstract class ChapterBatchLoader implements OnDismissListener
 	public final static String TAG = Constants.PACKAGE_NAME + ".BatchTask";
 
 	protected final ProgressDialogFragment progressDialog;
+	protected final LimitDialogFragment limitDialog;
+	
 	protected OnFinishListener onfinish = null;
 	protected final boolean isSecondaryProcess;
+	protected int limit = -1;
+	protected boolean notInFiling = false;
 	private final Integer[] chapter_ids;
 	private final FragmentActivity activity;
 	
@@ -33,6 +38,17 @@ public abstract class ChapterBatchLoader implements OnDismissListener
 		this.chapter_ids = chapter_ids;
 		this.isSecondaryProcess = false;
 		this.progressDialog = ProgressDialogFragment.createInstance(title, message, true);
+		{
+			DatabaseHelper dbh = new DatabaseHelper(getActivity());
+			SQLiteDatabase db = dbh.getReadableDatabase();
+			
+			Cursor c = db.rawQuery("SELECT COUNT(*) FROM `cards` " + getWhereClause(db), null);
+			c.moveToNext();
+			c.getLong(0);
+			this.limitDialog = LimitDialogFragment.createInstance(c.getInt(0));
+			c.close();
+			dbh.close();
+		}
 		progressDialog.setCancelable(false);
 		progressDialog.setOnDismissListener(this);
 	}
@@ -42,6 +58,7 @@ public abstract class ChapterBatchLoader implements OnDismissListener
 		this.chapter_ids = firstProcess.chapter_ids;
 		this.isSecondaryProcess = true;
 		this.progressDialog = firstProcess.progressDialog;
+		this.limitDialog = firstProcess.limitDialog;
 		progressDialog.setOnDismissListener(this);
 	}
 	public void setOnFinishListener(OnFinishListener onfinish)
@@ -51,6 +68,16 @@ public abstract class ChapterBatchLoader implements OnDismissListener
 	
 	public void execute()
 	{
+		if(!dialogDismissed && !limitDialog.isAdded()) {
+			limitDialog.activate(this);
+			limitDialog.show(activity.getSupportFragmentManager(), TAG);
+			return;
+		}
+	
+	}
+	public void executeOnLimit(int limit, boolean notInFiling) {
+		this.limit = limit;
+		this.notInFiling = notInFiling;
 		if(!dialogDismissed && !progressDialog.isAdded())
 			progressDialog.show(activity.getSupportFragmentManager(), TAG);
 		final BasicTask task = createTask();
@@ -64,6 +91,24 @@ public abstract class ChapterBatchLoader implements OnDismissListener
 	public void onDismiss(DialogInterface dialog) {
 		Log.e("DISM", "OSNTOEH");
 		dialogDismissed = true;
+	}
+	
+	
+	protected String getWhereClause(SQLiteDatabase db)
+	{
+		StringBuilder query = new StringBuilder();
+		if(notInFiling) query.append(" LEFT JOIN `filing` ON `filing_card_id` = `cards`.`_id`");
+		query.append(" JOIN `content` ON `content_card_id` = `cards`.`_id` WHERE `content_chapter_id` in (");
+		for(int lesson_id : chapter_ids)
+		{
+			query.append('\'');;
+			query.append(lesson_id);
+			query.append("',");
+		}
+		query.deleteCharAt(query.length()-1);
+		query.append(')');
+		if(notInFiling) query.append(" AND `filing_card_id` is null");
+		return query.toString();
 	}
 	
 	
@@ -95,19 +140,7 @@ public abstract class ChapterBatchLoader implements OnDismissListener
 				else progressDialog.setSecondaryProgress(progress);
 		}
 		
-		protected String getWhereClause(SQLiteDatabase db)
-		{
-			StringBuilder query = new StringBuilder(" JOIN `content` ON `content_card_id` = `cards`.`_id` WHERE `content_chapter_id` in (");
-			for(int lesson_id : chapter_ids)
-			{
-				query.append('\'');;
-				query.append(lesson_id);
-				query.append("',");
-			}
-			query.deleteCharAt(query.length()-1);
-			query.append(')');
-			return query.toString();
-		}
+
 		
 		protected abstract void run(SQLiteDatabase db);
 		@Override
@@ -122,6 +155,7 @@ public abstract class ChapterBatchLoader implements OnDismissListener
 		}
 
 	}
+	
 	
 }
 

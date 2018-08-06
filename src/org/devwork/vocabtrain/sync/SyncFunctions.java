@@ -25,6 +25,7 @@ import org.apache.http.HttpResponse;
 import org.apache.http.HttpStatus;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
+import org.apache.http.client.methods.HttpPost;
 import org.apache.http.conn.params.ConnManagerParams;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.params.HttpConnectionParams;
@@ -32,6 +33,8 @@ import org.apache.http.params.HttpParams;
 import org.apachecommons.codec.binary.Base64;
 import org.devwork.vocabtrain.Constants;
 
+import android.content.Context;
+import android.preference.PreferenceManager;
 import android.util.Log;
 
 
@@ -68,7 +71,7 @@ public class SyncFunctions {
      * @param password The server account password
      * @return String The authentication token returned by the server (or null)
      */
-	public static String authenticate(String username, String password) {
+	public static String authenticate(String username, String password, Context context) {
 /*
     	URL url = new URL(Constants.SERVER_AUTH);
     	Log.i(TAG, "Authenticating to: " + Constants.SERVER_AUTH);
@@ -82,8 +85,9 @@ public class SyncFunctions {
   */      
         final HttpResponse resp;
         
-        Log.i(TAG, "Authenticating to: " + Constants.SERVER_AUTH);
-        final HttpGet post = new HttpGet(Constants.SERVER_AUTH);
+        final String uri = Constants.serverUrl(PreferenceManager.getDefaultSharedPreferences(context), Constants.SERVER_AUTH); 
+        Log.i(TAG, "Authenticating to: " + uri);
+        final HttpGet post = new HttpGet(uri);
         Log.i(TAG, "Auth: " + new Base64().encodeToString((username + ":" + password).getBytes()));
         post.addHeader("Authorization", "basic " + new Base64().encodeToString((username + ":" + password).getBytes()));
         try {

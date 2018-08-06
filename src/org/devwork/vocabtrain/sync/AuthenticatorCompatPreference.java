@@ -91,7 +91,7 @@ public class AuthenticatorCompatPreference extends DialogPreference
 		{
 			try
 			{
-				return SyncFunctions.authenticate(username, password);
+				return SyncFunctions.authenticate(username, password, getContext());
 			}
 			catch(Exception ex)
 			{

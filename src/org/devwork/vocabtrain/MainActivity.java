@@ -48,12 +48,12 @@ public class MainActivity extends ActionBarFragmentActivity
 	{
 		super.onStart();
 		changeOrientation();
-		SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+		final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
 		if(prefs.getString(PrefSettings.KEY_CHECK_URI, null) == null)
 		{
 			final Editor editor = prefs.edit();
 			editor.putBoolean(PrefSettings.KEY_ENABLED, false);
-			editor.putString(PrefSettings.KEY_CHECK_URI, Constants.SERVER_VEECHECK);
+			editor.putString(PrefSettings.KEY_CHECK_URI, Constants.serverUrl(prefs, Constants.SERVER_VEECHECK) );
 			editor.commit();
 		}
 		if(prefs.getBoolean(PrefSettings.KEY_ENABLED, false))
